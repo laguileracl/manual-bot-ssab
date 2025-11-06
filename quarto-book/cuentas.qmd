@@ -19,7 +19,7 @@ Opciones disponibles:
 └──────────────────────────────────┘
 ```
 
-![Menú Cuentas por Cobrar](../assets/08-menu-cxc.png)
+![Menú Cuentas por Cobrar](assets/08-menu-cxc.png)
 
 ### 1️⃣ Facturas Vencidas
 
@@ -48,7 +48,7 @@ Clientes: 23
 - 📊 **Ver Detalle**: Lista completa de facturas
 - 📥 **Descargar Excel**: Reporte detallado
 
-![Facturas Vencidas](../assets/09-vencidas.png)
+![Facturas Vencidas](assets/09-vencidas.png)
 
 ### 2️⃣ Facturas por Vencer
 
@@ -70,7 +70,7 @@ Clientes: 45
 └─────────────┴──────────────┴─────────┘
 ```
 
-![Facturas por Vencer](../assets/10-por-vencer.png)
+![Facturas por Vencer](assets/10-por-vencer.png)
 
 ### 3️⃣ Facturas No Vencidas
 
@@ -112,7 +112,7 @@ Vencido: $1.800.000 (11 días mora)
 Al día: $5.700.000
 ```
 
-<!-- ![Estado Cuenta Cliente](../assets/11-estado-cuenta.png) -->
+<!-- ![Estado Cuenta Cliente](assets/11-estado-cuenta.png) -->
 
 > 📸 *Imagen disponible próximamente*
 
@@ -166,7 +166,7 @@ Clientes: 157
 - 👥 **Ver por RSM**: Análisis agrupado por ejecutivo
 - 📥 **Descargar Excel**: 5 hojas con detalle completo
 
-<!-- ![Estado General Cartera](../assets/12-estado-general.png) -->
+<!-- ![Estado General Cartera](assets/12-estado-general.png) -->
 
 > 📸 *Imagen disponible próximamente*
 
@@ -199,7 +199,7 @@ Al seleccionar **"Ver por RSM"**:
   4. **No Vencidas**: Al día
   5. **Todas**: Detalle completo
 
-<!-- ![Vista por RSM](../assets/13-por-rsm.png) -->
+<!-- ![Vista por RSM](assets/13-por-rsm.png) -->
 
 > 📸 *Imagen disponible próximamente*
 
@@ -268,7 +268,7 @@ Casa Matriz:
 
 **Tiempo:** 15 segundos
 
-<!-- ![Caso Uso 1](../assets/caso-uso-1.png) -->
+<!-- ![Caso Uso 1](assets/caso-uso-1.png) -->
 
 > 📸 *Imagen disponible próximamente*
 
@@ -289,7 +289,7 @@ Casa Matriz:
 **Tiempo:** 30 segundos
 **Resultado:** Excel con 5 hojas detalladas
 
-<!-- ![Caso Uso 2](../assets/caso-uso-2.png) -->
+<!-- ![Caso Uso 2](assets/caso-uso-2.png) -->
 
 > 📸 *Imagen disponible próximamente*
 
@@ -309,7 +309,7 @@ Casa Matriz:
 
 **Tiempo:** 20 segundos
 
-<!-- ![Caso Uso 3](../assets/caso-uso-3.png) -->
+<!-- ![Caso Uso 3](assets/caso-uso-3.png) -->
 
 > 📸 *Imagen disponible próximamente*
 
@@ -330,7 +330,7 @@ Casa Matriz:
 
 **Tiempo:** 25 segundos
 
-<!-- ![Caso Uso 4](../assets/caso-uso-4.png) -->
+<!-- ![Caso Uso 4](assets/caso-uso-4.png) -->
 
 > 📸 *Imagen disponible próximamente*
 
@@ -351,7 +351,7 @@ Casa Matriz:
 **Tiempo:** 20 segundos
 **Resultado:** Vista completa de $461M+ en cartera
 
-<!-- ![Caso Uso 5](../assets/caso-uso-5.png) -->
+<!-- ![Caso Uso 5](assets/caso-uso-5.png) -->
 
 > 📸 *Imagen disponible próximamente*
 

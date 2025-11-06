@@ -20,7 +20,7 @@ Bot: Encontrados 3 clientes:
      • Tecno Metales Chile
 ```
 
-![Búsqueda por Nombre](../assets/04-busqueda-nombre.png)
+![Búsqueda por Nombre](assets/04-busqueda-nombre.png){width=80%}
 
 #### Opción 2: Búsqueda por Código
 
@@ -55,7 +55,7 @@ Al seleccionar un cliente, obtienes:
 ╚══════════════════════════════════╝
 ```
 
-![Ficha Cliente](../assets/05-ficha-cliente.png)
+![Ficha Cliente](assets/05-ficha-cliente.png)
 
 ### Acciones Disponibles
 

@@ -24,7 +24,7 @@ El catálogo está organizado en 3 familias principales:
    - Grados y resistencias
    - Aplicaciones industriales
 
-![Catálogo Productos](../assets/06-catalogo.png)
+![Catálogo Productos](assets/06-catalogo.png)
 
 ### Búsqueda de Productos
 
@@ -67,9 +67,9 @@ Al seleccionar un producto:
 ╚════════════════════════════════════╝
 ```
 
-![Ficha Técnica Parte 1](../assets/07-ficha-tecnica-01.png)
+![Ficha Técnica Parte 1](assets/07-ficha-tecnica-01.png)
 
-![Ficha Técnica Parte 2](../assets/07-ficha-tecnica-02.png)
+![Ficha Técnica Parte 2](assets/07-ficha-tecnica-02.png)
 
 ### Acciones Disponibles
 

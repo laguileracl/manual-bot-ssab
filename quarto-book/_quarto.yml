@@ -7,6 +7,11 @@ book:
   author: "Luis Aguilera A."
   date: "2025-11-06"
   
+  navbar:
+    background: primary
+    logo: assets/ssab-logo.svg
+    search: true
+  
   chapters:
     - index.qmd
     - intro.qmd
@@ -29,3 +34,5 @@ format:
     css: styles.css
     toc: true
     number-sections: false
+    code-block-bg: true
+    code-block-border-left: "#0d6efd"

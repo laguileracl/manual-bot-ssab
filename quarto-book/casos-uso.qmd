@@ -13,7 +13,7 @@
 
 **Tiempo:** 15 segundos
 
-<!-- ![Caso Uso 1](../assets/caso-uso-1.png) -->
+<!-- ![Caso Uso 1](assets/caso-uso-1.png) -->
 
 > 📸 *Imagen disponible próximamente*
 
@@ -34,7 +34,7 @@
 **Tiempo:** 30 segundos
 **Resultado:** Excel con 5 hojas detalladas
 
-<!-- ![Caso Uso 2](../assets/caso-uso-2.png) -->
+<!-- ![Caso Uso 2](assets/caso-uso-2.png) -->
 
 > 📸 *Imagen disponible próximamente*
 
@@ -54,7 +54,7 @@
 
 **Tiempo:** 20 segundos
 
-<!-- ![Caso Uso 3](../assets/caso-uso-3.png) -->
+<!-- ![Caso Uso 3](assets/caso-uso-3.png) -->
 
 > 📸 *Imagen disponible próximamente*
 
@@ -75,7 +75,7 @@
 
 **Tiempo:** 25 segundos
 
-<!-- ![Caso Uso 4](../assets/caso-uso-4.png) -->
+<!-- ![Caso Uso 4](assets/caso-uso-4.png) -->
 
 > 📸 *Imagen disponible próximamente*
 
@@ -96,7 +96,7 @@
 **Tiempo:** 20 segundos
 **Resultado:** Vista completa de $461M+ en cartera
 
-<!-- ![Caso Uso 5](../assets/caso-uso-5.png) -->
+<!-- ![Caso Uso 5](assets/caso-uso-5.png) -->
 
 > 📸 *Imagen disponible próximamente*
 
