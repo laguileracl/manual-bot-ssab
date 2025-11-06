@@ -1,6 +1,11 @@
-/* Minimal custom styles - SSAB branding only */
+/* SSAB branding and professional styling */
 .navbar {
   background-color: #002F6C !important;
+  border-bottom: 3px solid #E2001A;
+}
+
+.navbar-logo {
+  height: 40px;
 }
 
 .navbar-brand, 

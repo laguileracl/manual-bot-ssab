@@ -8,7 +8,7 @@
 
 El catálogo está organizado en 3 familias principales:
 
-1. **💄 Labios** (Perfiles Labios)
+1. **Labios** (Perfiles Labios)
 
    - Espesores disponibles
    - Dimensiones estándar

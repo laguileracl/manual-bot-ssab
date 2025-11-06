@@ -8,8 +8,9 @@ book:
   date: "2025-11-06"
   
   navbar:
-    background: primary
+    background: "#002F6C"
     logo: assets/ssab-logo.svg
+    title: false
     search: true
   
   chapters:
