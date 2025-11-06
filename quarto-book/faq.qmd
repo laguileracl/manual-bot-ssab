@@ -150,7 +150,7 @@ Suscríbete al canal de novedades:
 
 Usa esta lista para verificar que dominas las funciones esenciales:
 
-- [ ] He iniciado conversación con @oxcl_bot
+- [ ] He iniciado conversación con [@oxcl_bot](https://t.me/oxcl_bot)
 - [ ] Puedo buscar un cliente por nombre
 - [ ] Puedo ver la línea de crédito de un cliente
 - [ ] Sé cómo buscar una ficha técnica

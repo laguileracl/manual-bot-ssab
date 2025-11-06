@@ -261,7 +261,7 @@ Casa Matriz:
 
 **Pasos:**
 
-1. Abrir Telegram → @oxcl_bot
+1. Abrir Telegram → [@oxcl_bot](https://t.me/oxcl_bot)
 2. Menú Principal → 👥 Clientes
 3. 🔍 Buscar por Nombre → Ingresar nombre
 4. Ver **Línea Crédito** y **Disponible**
@@ -509,7 +509,7 @@ Suscríbete al canal de novedades:
 
 Usa esta lista para verificar que dominas las funciones esenciales:
 
-- [ ] He iniciado conversación con @oxcl_bot
+- [ ] He iniciado conversación con [@oxcl_bot](https://t.me/oxcl_bot)
 - [ ] Puedo buscar un cliente por nombre
 - [ ] Puedo ver la línea de crédito de un cliente
 - [ ] Sé cómo buscar una ficha técnica

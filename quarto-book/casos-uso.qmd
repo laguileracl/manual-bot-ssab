@@ -6,7 +6,7 @@
 
 **Pasos:**
 
-1. Abrir Telegram → @oxcl_bot
+1. Abrir Telegram → [@oxcl_bot](https://t.me/oxcl_bot)
 2. Menú Principal → 👥 Clientes
 3. 🔍 Buscar por Nombre → Ingresar nombre
 4. Ver **Línea Crédito** y **Disponible**

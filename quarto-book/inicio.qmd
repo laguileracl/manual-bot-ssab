@@ -2,8 +2,8 @@
 
 ### Paso 1: Buscar el Bot
 
-1. Abrir Telegram y, en el buscador superior, escribir: `@oxcl_bot`
-2. Seleccionar el bot de la lista de resultados.
+1. Abrir Telegram y, en el buscador superior, escribir: [@oxcl_bot](https://t.me/oxcl_bot)
+2. Seleccionar el bot de la lista de resultados o hacer clic en el enlace anterior.
 
 ![Búsqueda del Bot](assets/01-buscar-bot.png)
 
