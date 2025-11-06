@@ -98,9 +98,6 @@ Para solicitar capacitación del bot para tu equipo:
 
 ### Documentación Técnica
 
-- [Manual de Administración](../admin/ADMIN_GUIDE.md)
-- [Guía de Desarrollo](../dev/DEVELOPER_GUIDE.md)
-- [API Reference](../api/API_DOCS.md)
 
 ### Videos Tutoriales
 
