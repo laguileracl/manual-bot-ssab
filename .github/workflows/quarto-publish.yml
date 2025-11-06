@@ -4,8 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'docs/user-guide/quarto-book/**'
-      - 'docs/user-guide/GUIA_USUARIO.md'
+      - 'quarto-book/**'
       - '.github/workflows/quarto-publish.yml'
   workflow_dispatch:  # Permite ejecución manual
 
@@ -32,7 +31,7 @@ jobs:
 
       - name: Render Quarto Book
         run: |
-          cd docs/user-guide/quarto-book
+          cd quarto-book
           quarto render
 
       - name: Setup Pages
@@ -41,7 +40,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/user-guide/quarto-book/_book
+          path: quarto-book/_book
 
   deploy:
     environment:
