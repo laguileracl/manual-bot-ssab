@@ -2,17 +2,21 @@
 
 ### Paso 1: Buscar el Bot
 
-1. Abrir Telegram y, en el buscador superior, escribir: [@oxcl_bot](https://t.me/oxcl_bot)
-2. Seleccionar el bot de la lista de resultados o hacer clic en el enlace anterior.
+1. Abrir Telegram y, en el buscador superior, escribir: `@oxcl_bot` o hacer clic aquí: [@oxcl_bot](https://t.me/oxcl_bot){target="_blank"}
+2. Seleccionar el bot de la lista de resultados.
 
-![Búsqueda del Bot](assets/01-buscar-bot.png)
+::: {.column-page-inset}
+![*Búsqueda del Bot en Telegram*](assets/01-buscar-bot.png){width=70% fig-align="center"}
+:::
 
 ### Paso 2: Iniciar Conversación
 
 1. Presionar el botón **"Iniciar"** o **"Start"**. El bot te enviará un mensaje de bienvenida.
 2. Si no tienes acceso, recibirás instrucciones para solicitarlo.
 
-![Inicio del Bot](assets/02-inicio-bot.png)
+::: {.column-page-inset}
+![*Inicio de conversación con el Bot*](assets/02-inicio-bot.png){width=70% fig-align="center"}
+:::
 
 ### Paso 3: Verificación de Acceso
 

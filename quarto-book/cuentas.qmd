@@ -19,7 +19,9 @@ Opciones disponibles:
 └──────────────────────────────────┘
 ```
 
-![Menú Cuentas por Cobrar](assets/08-menu-cxc.png)
+::: {.column-page-inset}
+![*Menú de análisis de cartera*](assets/08-menu-cxc.png){width=70% fig-align="center"}
+:::
 
 ### 1️⃣ Facturas Vencidas
 
@@ -48,7 +50,9 @@ Clientes: 23
 - 📊 **Ver Detalle**: Lista completa de facturas
 - 📥 **Descargar Excel**: Reporte detallado
 
-![Facturas Vencidas](assets/09-vencidas.png)
+::: {.column-page-inset}
+![*Reporte de facturas vencidas*](assets/09-vencidas.png){width=70% fig-align="center"}
+:::
 
 ### 2️⃣ Facturas por Vencer
 
@@ -70,7 +74,9 @@ Clientes: 45
 └─────────────┴──────────────┴─────────┘
 ```
 
-![Facturas por Vencer](assets/10-por-vencer.png)
+::: {.column-page-inset}
+![*Facturas próximas a vencer*](assets/10-por-vencer.png){width=70% fig-align="center"}
+:::
 
 ### 3️⃣ Facturas No Vencidas
 

@@ -24,7 +24,9 @@ El catálogo está organizado en 3 familias principales:
    - Grados y resistencias
    - Aplicaciones industriales
 
-![Catálogo Productos](assets/06-catalogo.png)
+::: {.column-page-inset}
+![*Catálogo de productos SSAB*](assets/06-catalogo.png){width=70% fig-align="center"}
+:::
 
 ### Búsqueda de Productos
 
@@ -67,9 +69,13 @@ Al seleccionar un producto:
 ╚════════════════════════════════════╝
 ```
 
-![Ficha Técnica Parte 1](assets/07-ficha-tecnica-01.png)
+::: {.column-page-inset}
+![*Ficha técnica - Parte 1*](assets/07-ficha-tecnica-01.png){width=70% fig-align="center"}
+:::
 
-![Ficha Técnica Parte 2](assets/07-ficha-tecnica-02.png)
+::: {.column-page-inset}
+![*Ficha técnica - Parte 2*](assets/07-ficha-tecnica-02.png){width=70% fig-align="center"}
+:::
 
 ### Acciones Disponibles
 
