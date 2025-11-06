@@ -6,11 +6,13 @@ Este repositorio contiene la documentación completa del Bot de Gestión Comerci
 
 ```
 manual-bot-ssab/
-├── README.md                           # Este archivo
+├── README.md                           # Página principal
 ├── LICENSE                             # Licencia MIT
+├── CONTRIBUTING.md                     # Esta guía
 ├── GUIA_USUARIO.md                     # Manual completo en Markdown
 ├── Manual_Usuario_SSAB_Final.html      # Versión HTML
-├── Manual_Usuario_Bot_SSAB_v2.pptx     # Presentación PowerPoint
+├── Manual_Usuario_Bot_SSAB_Final.pptx  # Presentación PowerPoint
+├── style.css                           # Estilos para HTML
 ├── assets/                             # Capturas de pantalla
 │   ├── 01-buscar-bot.png
 │   ├── 02-inicio-bot.png
@@ -24,15 +26,7 @@ manual-bot-ssab/
 │   ├── 08-menu-cxc.png
 │   ├── 09-vencidas.png
 │   └── 10-por-vencer.png
-├── docs/                               # Documentación modular
-│   ├── 01-introduccion.md
-│   ├── 02-requisitos.md
-│   ├── 03-inicio-acceso.md
-│   ├── 04-gestion-clientes.md
-│   ├── 05-fichas-tecnicas.md
-│   ├── 06-cuentas-cobrar.md
-│   ├── 07-casos-uso.md
-│   └── 08-faq.md
+├── init-repo.sh                        # Script de inicialización
 └── .gitignore
 
 ```

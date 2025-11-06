@@ -23,21 +23,22 @@ Manual de usuario completo para el Bot de Gestión Comercial SSAB Chile. Este bo
 
 ### Formatos Disponibles
 
-- **[📄 Manual PDF](Manual_Usuario_Bot_SSAB_Chile.pdf)** - Versión completa para imprimir
-- **[🌐 Manual HTML](Manual_Usuario_SSAB_Final.html)** - Versión web interactiva
-- **[📊 Presentación PowerPoint](Manual_Usuario_Bot_SSAB_v2.pptx)** - Para capacitaciones
-- **[📝 Markdown](GUIA_USUARIO.md)** - Versión editable
+- **[🌐 Manual HTML](Manual_Usuario_SSAB_Final.html)** - Versión web interactiva (descárgala y ábrela en tu navegador)
+- **[📊 Presentación PowerPoint](Manual_Usuario_Bot_SSAB_Final.pptx)** - Para capacitaciones
+- **[📝 Markdown](GUIA_USUARIO.md)** - Manual completo en formato Markdown
 
-### Contenidos
+### Manual Completo
 
-1. [Introducción](docs/01-introduccion.md)
-2. [Requisitos Previos](docs/02-requisitos.md)
-3. [Inicio y Acceso](docs/03-inicio-acceso.md)
-4. [Gestión de Clientes](docs/04-gestion-clientes.md)
-5. [Fichas Técnicas](docs/05-fichas-tecnicas.md)
-6. [Cuentas por Cobrar](docs/06-cuentas-cobrar.md)
-7. [Casos de Uso Prácticos](docs/07-casos-uso.md)
-8. [Preguntas Frecuentes](docs/08-faq.md)
+Lee el [**Manual Completo aquí**](GUIA_USUARIO.md) que incluye:
+
+- 🎯 Introducción y Beneficios
+- 🔑 Requisitos Previos  
+- 🚀 Inicio y Acceso
+- 👥 Gestión de Clientes
+- 📋 Fichas Técnicas
+- 💰 Cuentas por Cobrar
+- 💼 Casos de Uso Prácticos
+- ❓ Preguntas Frecuentes
 
 ## 🚀 Inicio Rápido
 
@@ -150,7 +151,7 @@ Bot → Fichas Técnicas → Buscar → Descargar PDF → Compartir
 **¿En qué formato se descargan los reportes?**
 > Excel (.xlsx) para datos, PDF para fichas técnicas, vCard (.vcf) para contactos
 
-[Ver todas las FAQ →](docs/08-faq.md)
+[Ver el manual completo para más información →](GUIA_USUARIO.md)
 
 ## 📞 Soporte
 
@@ -185,7 +186,6 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 - [Bot en Telegram](https://t.me/oxcl_bot) - @oxcl_bot
 - [Sitio Web SSAB](https://www.ssab.com/es-cl)
-- [Repositorio Principal del Bot](https://github.com/laguileracl/ssabchilebot) (privado)
 
 ---
 
