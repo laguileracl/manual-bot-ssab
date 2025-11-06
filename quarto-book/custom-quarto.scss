@@ -1,0 +1,410 @@
+/*-- scss:defaults --*/
+
+// Quarto.org color scheme
+$primary: #0d6efd !default;
+$secondary: #6c757d !default;
+$success: #198754 !default;
+$info: #0dcaf0 !default;
+$warning: #ffc107 !default;
+$danger: #dc3545 !default;
+$light: #f8f9fa !default;
+$dark: #212529 !default;
+
+// SSAB brand colors
+$ssab-blue: #002F6C;
+$ssab-red: #E2001A;
+
+// Typography
+$font-family-sans-serif: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif !default;
+$font-family-monospace: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+$headings-font-weight: 600 !default;
+$headings-line-height: 1.2 !default;
+
+// Spacing
+$spacer: 1rem !default;
+
+// Border radius
+$border-radius: 0.375rem !default;
+$border-radius-sm: 0.25rem !default;
+$border-radius-lg: 0.5rem !default;
+
+// Shadows (Quarto style)
+$box-shadow-sm: 0 .125rem .25rem rgba(0, 0, 0, .075) !default;
+$box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !default;
+
+/*-- scss:rules --*/
+
+// Smooth scrolling
+html {
+  scroll-behavior: smooth;
+}
+
+// Body
+body {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Headings (Quarto style)
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: $dark;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5, h6 {
+  font-size: 1rem;
+}
+
+// Links (Quarto style)
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+  
+  &:hover {
+    color: darken($primary, 10%);
+    text-decoration: underline;
+  }
+}
+
+// Code (Quarto style)
+code {
+  font-size: 0.875em;
+  color: #e83e8c;
+  background-color: #f8f9fa;
+  padding: 0.2em 0.4em;
+  border-radius: $border-radius-sm;
+  font-family: $font-family-monospace;
+}
+
+pre {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: $border-radius;
+  padding: 1rem;
+  overflow-x: auto;
+  
+  code {
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+}
+
+// Tables (Quarto style)
+table {
+  margin-bottom: 1.5rem;
+  border-collapse: collapse;
+  width: 100%;
+  
+  thead {
+    border-bottom: 2px solid #dee2e6;
+  }
+  
+  th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  th {
+    font-weight: 600;
+    background-color: #f8f9fa;
+  }
+  
+  tbody tr:hover {
+    background-color: #f8f9fa;
+  }
+}
+
+// Blockquotes (Quarto style)
+blockquote {
+  border-left: 4px solid #dee2e6;
+  padding-left: 1rem;
+  margin-left: 0;
+  margin-bottom: 1rem;
+  color: #6c757d;
+  font-style: italic;
+}
+
+// Callouts (Quarto style)
+.callout {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-left: 5px solid;
+  border-radius: $border-radius;
+  padding: 1rem;
+  
+  .callout-header {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+.callout-note {
+  background-color: #e7f3ff;
+  border-left-color: $primary;
+  
+  .callout-header {
+    color: $primary;
+  }
+}
+
+.callout-tip {
+  background-color: #d1f4e0;
+  border-left-color: $success;
+  
+  .callout-header {
+    color: $success;
+  }
+}
+
+.callout-warning {
+  background-color: #fff3cd;
+  border-left-color: $warning;
+  
+  .callout-header {
+    color: #664d03;
+  }
+}
+
+.callout-important {
+  background-color: #f8d7da;
+  border-left-color: $danger;
+  
+  .callout-header {
+    color: $danger;
+  }
+}
+
+.callout-caution {
+  background-color: #f8d7da;
+  border-left-color: $danger;
+  
+  .callout-header {
+    color: $danger;
+  }
+}
+
+// Navbar (Quarto style with SSAB branding)
+.navbar {
+  background-color: $ssab-blue !important;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,.08);
+  
+  .navbar-brand {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: white !important;
+  }
+  
+  .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    border-radius: $border-radius-sm;
+    transition: all 0.15s ease-in-out;
+    
+    &:hover, &.active {
+      color: white !important;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+// Sidebar (Quarto style)
+.sidebar {
+  background-color: #ffffff;
+  border-right: 1px solid #dee2e6;
+  padding: 1.5rem 0;
+  
+  nav ul {
+    list-style: none;
+    padding-left: 0;
+    
+    li {
+      margin-bottom: 0.25rem;
+      
+      a {
+        display: block;
+        padding: 0.5rem 1.5rem;
+        color: $dark;
+        border-left: 3px solid transparent;
+        transition: all 0.15s ease-in-out;
+        
+        &:hover {
+          background-color: #f8f9fa;
+          color: $primary;
+          text-decoration: none;
+        }
+        
+        &.active {
+          border-left-color: $ssab-blue;
+          color: $ssab-blue;
+          font-weight: 600;
+          background-color: #f8f9fa;
+        }
+      }
+    }
+  }
+}
+
+// Main content (Quarto style)
+main.content {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+// Images
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow-sm;
+  margin: 1.5rem 0;
+}
+
+// Lists
+ul, ol {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Horizontal rule
+hr {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid #dee2e6;
+}
+
+// Footer
+.page-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #dee2e6;
+  color: #6c757d;
+  font-size: 0.875rem;
+  
+  a {
+    color: #6c757d;
+    
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+// Search
+#quarto-search {
+  .search-input {
+    border-radius: $border-radius;
+    border: 1px solid #dee2e6;
+    padding: 0.5rem 1rem;
+    
+    &:focus {
+      border-color: $primary;
+      box-shadow: 0 0 0 0.2rem rgba($primary, 0.25);
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 991px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  main.content {
+    padding: 1.5rem 1rem;
+  }
+  
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid #dee2e6;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.35rem;
+  }
+}
+
+// TOC
+#TOC {
+  .toc-actions {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Print styles
+@media print {
+  .navbar,
+  .sidebar,
+  .page-footer {
+    display: none !important;
+  }
+  
+  main.content {
+    max-width: none;
+    padding: 0;
+  }
+  
+  a {
+    color: $dark;
+    text-decoration: none;
+  }
+}

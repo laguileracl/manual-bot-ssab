@@ -1,7 +1,0 @@
-_book/
-.quarto/
-*.log
-.DS_Store
-
-/.quarto/
-**/*.quarto_ipynb
