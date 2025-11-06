@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Manual de Usuario - Bot SSAB Chile</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Manual de Usuario - Bot SSAB Chile</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#guía-de-usuario---bot-de-gestión-comercial-ssab-chile"
+id="toc-guía-de-usuario---bot-de-gestión-comercial-ssab-chile">📱 Guía
+de Usuario - Bot de Gestión Comercial SSAB Chile</a>
+<ul>
+<li><a href="#introducción" id="toc-introducción">🎯
+Introducción</a></li>
+<li><a href="#requisitos-previos" id="toc-requisitos-previos">🔑
+Requisitos Previos</a></li>
+<li><a href="#inicio-y-acceso" id="toc-inicio-y-acceso">🚀 Inicio y
+Acceso</a></li>
+<li><a href="#funcionalidades-principales"
+id="toc-funcionalidades-principales">🎮 Funcionalidades
+Principales</a></li>
+<li><a href="#gestión-de-clientes" id="toc-gestión-de-clientes">👥
+Gestión de Clientes</a></li>
+<li><a href="#fichas-técnicas" id="toc-fichas-técnicas">📋 Fichas
+Técnicas</a></li>
+<li><a href="#cuentas-por-cobrar" id="toc-cuentas-por-cobrar">💰 Cuentas
+por Cobrar</a></li>
+<li><a href="#ℹ-información-ssab" id="toc-ℹ-información-ssab">ℹ️
+Información SSAB</a></li>
+<li><a href="#casos-de-uso-prácticos" id="toc-casos-de-uso-prácticos">💼
+Casos de Uso Prácticos</a></li>
+<li><a href="#preguntas-frecuentes" id="toc-preguntas-frecuentes">❓
+Preguntas Frecuentes</a></li>
+<li><a href="#soporte-y-contacto" id="toc-soporte-y-contacto">📞 Soporte
+y Contacto</a></li>
+<li><a href="#recursos-adicionales" id="toc-recursos-adicionales">📚
+Recursos Adicionales</a></li>
+<li><a href="#notas-importantes" id="toc-notas-importantes">📝 Notas
+Importantes</a></li>
+<li><a href="#historial-de-versiones" id="toc-historial-de-versiones">📄
+Historial de Versiones</a></li>
+<li><a href="#checklist-de-inicio-rápido"
+id="toc-checklist-de-inicio-rápido">✅ Checklist de Inicio
+Rápido</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="guía-de-usuario---bot-de-gestión-comercial-ssab-chile">📱 Guía
+de Usuario - Bot de Gestión Comercial SSAB Chile</h1>
+<blockquote>
+<p><strong>Versión:</strong> 1.0 / <strong>Fecha:</strong> Noviembre
+2025 <strong>Usuario:</strong> <span class="citation"
+data-cites="oxcl_bot">@oxcl_bot</span></p>
+</blockquote>
+<blockquote>
+<p>📸 <strong>Nota:</strong> Esta guía incluye 12 capturas de pantalla
+reales del bot. Algunas imágenes adicionales estarán disponibles en
+futuras actualizaciones.</p>
+</blockquote>
+<hr />
+<h2 id="introducción">🎯 Introducción</h2>
+<p>El <strong>Bot de Gestión Comercial SSAB Chile</strong> es una
+herramienta desarrollada para facilitar el acceso instantáneo a
+información crítica del negocio directamente desde Telegram. Diseñado
+específicamente para el equipo comercial, permite consultar datos de
+clientes, fichas técnicas de productos, estados de cuenta y análisis de
+cartera en tiempo real.</p>
+<h3 id="beneficios-clave">✨ Beneficios Clave</h3>
+<ul>
+<li>⚡ <strong>Acceso Instantáneo</strong>: Información disponible 24/7
+desde cualquier dispositivo</li>
+<li>📊 <strong>Reportes Profesionales</strong>: Generación automática de
+Excel con datos actualizados</li>
+<li>🎯 <strong>Búsqueda Inteligente</strong>: Encuentra clientes y
+productos rápidamente</li>
+<li>📈 <strong>Análisis de Cartera</strong>: Visualización completa del
+estado de cuentas por cobrar</li>
+<li>🔒 <strong>Seguridad</strong>: Acceso controlado solo para usuarios
+autorizados</li>
+</ul>
+<hr />
+<h2 id="requisitos-previos">🔑 Requisitos Previos</h2>
+<h3 id="antes-de-comenzar">Antes de Comenzar</h3>
+<ol type="1">
+<li><p><strong>Telegram Instalado</strong></p>
+<ul>
+<li>Versión móvil (iOS/Android) o desktop</li>
+<li>Cuenta Telegram activa</li>
+</ul></li>
+<li><p><strong>Acceso Autorizado</strong></p>
+<ul>
+<li>Contactar al administrador del sistema</li>
+<li>Proporcionar tu usuario de Telegram (<span class="citation"
+data-cites="usuario">@usuario</span>)</li>
+<li>Esperar confirmación de acceso</li>
+</ul></li>
+<li><p><strong>Conexión a Internet</strong></p>
+<ul>
+<li>Necesaria para todas las operaciones</li>
+<li>Conexión estable recomendada para descargas</li>
+</ul></li>
+</ol>
+<hr />
+<h2 id="inicio-y-acceso">🚀 Inicio y Acceso</h2>
+<h3 id="paso-1-buscar-el-bot">Paso 1: Buscar el Bot</h3>
+<ol type="1">
+<li>Abrir Telegram y, en el buscador superior, escribir:
+<code>@oxcl_bot</code></li>
+<li>Seleccionar el bot de la lista de resultados.</li>
+</ol>
+<figure>
+<img src="assets/01-buscar-bot.png" alt="Búsqueda del Bot" />
+<figcaption aria-hidden="true">Búsqueda del Bot</figcaption>
+</figure>
+<h3 id="paso-2-iniciar-conversación">Paso 2: Iniciar Conversación</h3>
+<ol type="1">
+<li>Presionar el botón <strong>“Iniciar”</strong> o
+<strong>“Start”</strong>. El bot te enviará un mensaje de
+bienvenida.</li>
+<li>Si no tienes acceso, recibirás instrucciones para solicitarlo.</li>
+</ol>
+<figure>
+<img src="assets/02-inicio-bot.png" alt="Inicio del Bot" />
+<figcaption aria-hidden="true">Inicio del Bot</figcaption>
+</figure>
+<h3 id="paso-3-verificación-de-acceso">Paso 3: Verificación de
+Acceso</h3>
+<p>El bot verificará automáticamente si tu usuario está autorizado:</p>
+<ul>
+<li>✅ <strong>Acceso Concedido</strong>: Verás el menú principal</li>
+<li>❌ <strong>Acceso Denegado</strong>: Contacta al administrador con
+tu <span class="citation" data-cites="usuario">@usuario</span></li>
+</ul>
+<hr />
+<h2 id="funcionalidades-principales">🎮 Funcionalidades Principales</h2>
+<h3 id="menú-principal">📱 Menú Principal</h3>
+<p>Al iniciar, verás 4 opciones principales:</p>
+<pre><code>┌─────────────────────────────┐
+│  MENÚ PRINCIPAL             │
+├─────────────────────────────┤
+│  👥 Clientes                │
+│  📋 Fichas Técnicas         │
+│  💰 Cuentas x Cobrar        │
+│  ℹ️  Info SSAB              │
+└─────────────────────────────┘</code></pre>
+<figure>
+<img src="assets/03-menu-principal.png" alt="Menú Principal" />
+<figcaption aria-hidden="true">Menú Principal</figcaption>
+</figure>
+<hr />
+<h2 id="gestión-de-clientes">👥 Gestión de Clientes</h2>
+<h3 id="búsqueda-de-clientes">Búsqueda de Clientes</h3>
+<p><strong>Acceso:</strong> Menú Principal → 👥 Clientes</p>
+<h4 id="opción-1-búsqueda-por-nombre">Opción 1: Búsqueda por Nombre</h4>
+<ol type="1">
+<li>Presionar <strong>“🔍 Buscar por Nombre”</strong></li>
+<li>Escribir el nombre del cliente (mínimo 3 letras)</li>
+<li>Seleccionar de la lista de resultados</li>
+</ol>
+<p><strong>Ejemplo:</strong></p>
+<pre><code>Usuario: &quot;Tecno&quot;
+Bot: Encontrados 3 clientes:
+     • Tecno Industrial S.A.
+     • Tecnomaq Ltda.
+     • Tecno Metales Chile</code></pre>
+<figure>
+<img src="assets/04-busqueda-nombre.png" alt="Búsqueda por Nombre" />
+<figcaption aria-hidden="true">Búsqueda por Nombre</figcaption>
+</figure>
+<h4 id="opción-2-búsqueda-por-código">Opción 2: Búsqueda por Código</h4>
+<ol type="1">
+<li>Presionar <strong>“🔢 Buscar por Código”</strong></li>
+<li>Ingresar el código SAP del cliente</li>
+<li>Ver información detallada</li>
+</ol>
+<p><strong>Ejemplo:</strong></p>
+<pre><code>Usuario: &quot;C123456&quot;
+Bot: [Muestra ficha completa del cliente]</code></pre>
+<h3 id="información-del-cliente">Información del Cliente</h3>
+<p>Al seleccionar un cliente, obtienes:</p>
+<pre><code>╔══════════════════════════════════╗
+║  INFORMACIÓN DEL CLIENTE         ║
+╠══════════════════════════════════╣
+║  📌 Nombre: Tecno Industrial S.A.║
+║  🔢 Código: C123456              ║
+║  👤 Ejecutivo: Juan Pérez        ║
+║  📞 Teléfono: +56 9 8765 4321    ║
+║  📧 Email: ventas@tecno.cl       ║
+║  💳 Línea Crédito: $50.000.000   ║
+║  📊 Usado: $32.500.000 (65%)     ║
+║  🎯 Disponible: $17.500.000      ║
+║  📅 Plazo Pago: 30 días          ║
+╚══════════════════════════════════╝</code></pre>
+<figure>
+<img src="assets/05-ficha-cliente.png" alt="Ficha Cliente" />
+<figcaption aria-hidden="true">Ficha Cliente</figcaption>
+</figure>
+<h3 id="acciones-disponibles">Acciones Disponibles</h3>
+<p>Desde la ficha del cliente puedes:</p>
+<ul>
+<li>📊 <strong>Ver Estado de Cuenta</strong>: Facturas pendientes y
+saldos</li>
+<li>📥 <strong>Descargar Excel</strong>: Reporte detallado en Excel</li>
+<li>📇 <strong>Exportar Contacto</strong>: Archivo vCard para tu
+agenda</li>
+<li>🔙 <strong>Volver</strong>: Regresar al menú anterior</li>
+</ul>
+<hr />
+<h2 id="fichas-técnicas">📋 Fichas Técnicas</h2>
+<h3 id="catálogo-de-productos">Catálogo de Productos</h3>
+<p><strong>Acceso:</strong> Menú Principal → 📋 Fichas Técnicas</p>
+<h4 id="navegación-por-categorías">Navegación por Categorías</h4>
+<p>El catálogo está organizado en 3 familias principales:</p>
+<ol type="1">
+<li><p><strong>💄 Labios</strong> (Perfiles Labios)</p>
+<ul>
+<li>Espesores disponibles</li>
+<li>Dimensiones estándar</li>
+<li>Aplicaciones</li>
+</ul></li>
+<li><p><strong>🔲 Mainframe Liner</strong></p>
+<ul>
+<li>Perfiles estructurales</li>
+<li>Especificaciones técnicas</li>
+<li>Cargas admisibles</li>
+</ul></li>
+<li><p><strong>⚡ Ripper</strong></p>
+<ul>
+<li>Aceros especiales</li>
+<li>Grados y resistencias</li>
+<li>Aplicaciones industriales</li>
+</ul></li>
+</ol>
+<figure>
+<img src="assets/06-catalogo.png" alt="Catálogo Productos" />
+<figcaption aria-hidden="true">Catálogo Productos</figcaption>
+</figure>
+<h3 id="búsqueda-de-productos">Búsqueda de Productos</h3>
+<h4 id="por-códigonombre">Por Código/Nombre</h4>
+<ol type="1">
+<li>Presionar <strong>“🔍 Buscar Producto”</strong></li>
+<li>Ingresar código o palabra clave</li>
+<li>Ver resultados filtrados</li>
+</ol>
+<p><strong>Ejemplo:</strong></p>
+<pre><code>Usuario: &quot;LP200&quot;
+Bot: 📋 Labios LP200x4.5
+     Espesor: 4.5mm
+     Largo: 200mm
+     [Ver Ficha Completa]</code></pre>
+<h3 id="ficha-técnica-completa">Ficha Técnica Completa</h3>
+<p>Al seleccionar un producto:</p>
+<pre><code>╔════════════════════════════════════╗
+║  FICHA TÉCNICA                     ║
+╠════════════════════════════════════╣
+║  📦 Producto: Labios LP200x4.5     ║
+║  🔢 Código: LP200-45               ║
+║  📏 Dimensiones:                   ║
+║     • Largo: 200 mm                ║
+║     • Espesor: 4.5 mm              ║
+║     • Ancho: 150 mm                ║
+║  ⚙️  Material: HARDOX 500          ║
+║  💪 Dureza: 500 HBW                ║
+║  📊 Peso: 12.5 kg/unidad           ║
+║  💵 Precio: $145.000 + IVA         ║
+║  📦 Stock: Disponible              ║
+║  🚚 Entrega: 3-5 días hábiles      ║
+╚════════════════════════════════════╝</code></pre>
+<figure>
+<img src="assets/07-ficha-tecnica-01.png" alt="Ficha Técnica Parte 1" />
+<figcaption aria-hidden="true">Ficha Técnica Parte 1</figcaption>
+</figure>
+<figure>
+<img src="assets/07-ficha-tecnica-02.png" alt="Ficha Técnica Parte 2" />
+<figcaption aria-hidden="true">Ficha Técnica Parte 2</figcaption>
+</figure>
+<h3 id="acciones-disponibles-1">Acciones Disponibles</h3>
+<ul>
+<li>📄 <strong>Descargar PDF</strong>: Ficha técnica completa en
+PDF</li>
+<li>🖼️ <strong>Ver Planos</strong>: Dibujos técnicos y dimensiones</li>
+<li>💰 <strong>Cotizar</strong>: Generar cotización para cliente</li>
+<li>📧 <strong>Compartir</strong>: Enviar ficha por email</li>
+</ul>
+<hr />
+<h2 id="cuentas-por-cobrar">💰 Cuentas por Cobrar</h2>
+<h3 id="menú-de-análisis">Menú de Análisis</h3>
+<p><strong>Acceso:</strong> Menú Principal → 💰 Cuentas x Cobrar</p>
+<p>Opciones disponibles:</p>
+<pre><code>┌──────────────────────────────────┐
+│  ANÁLISIS DE CARTERA             │
+├──────────────────────────────────┤
+│  1️⃣ Facturas Vencidas           │
+│  2️⃣ Facturas por Vencer          │
+│  3️⃣ Facturas No Vencidas         │
+│  4️⃣ Facturas por Cliente         │
+│  5️⃣ Top Clientes Morosos         │
+│  6️⃣ Estado General Cartera       │
+└──────────────────────────────────┘</code></pre>
+<figure>
+<img src="assets/08-menu-cxc.png" alt="Menú Cuentas por Cobrar" />
+<figcaption aria-hidden="true">Menú Cuentas por Cobrar</figcaption>
+</figure>
+<h3 id="facturas-vencidas">1️⃣ Facturas Vencidas</h3>
+<p>Visualiza todas las facturas con morosidad:</p>
+<pre><code>📉 FACTURAS VENCIDAS
+
+Total: $125.340.500
+Facturas: 87
+Clientes: 23
+
+┌─────────────┬──────────────┬─────────┐
+│ Rango       │ Monto        │ % Total │
+├─────────────┼──────────────┼─────────┤
+│ 1-30 días   │ $45.200.000  │  36%    │
+│ 31-60 días  │ $38.500.000  │  31%    │
+│ 61-90 días  │ $25.340.500  │  20%    │
+│ +90 días    │ $16.300.000  │  13%    │
+└─────────────┴──────────────┴─────────┘</code></pre>
+<p><strong>Sub-opciones:</strong></p>
+<ul>
+<li>👥 <strong>Ver por RSM</strong>: Agrupar por ejecutivo de
+ventas</li>
+<li>📊 <strong>Ver Detalle</strong>: Lista completa de facturas</li>
+<li>📥 <strong>Descargar Excel</strong>: Reporte detallado</li>
+</ul>
+<figure>
+<img src="assets/09-vencidas.png" alt="Facturas Vencidas" />
+<figcaption aria-hidden="true">Facturas Vencidas</figcaption>
+</figure>
+<h3 id="facturas-por-vencer">2️⃣ Facturas por Vencer</h3>
+<p>Facturas próximas a vencer (próximos 30 días):</p>
+<pre><code>📅 FACTURAS POR VENCER
+
+Total: $89.750.000
+Facturas: 156
+Clientes: 45
+
+┌─────────────┬──────────────┬─────────┐
+│ Vencimiento │ Monto        │ Factor. │
+├─────────────┼──────────────┼─────────┤
+│ 0-7 días    │ $32.100.000  │  42     │
+│ 8-15 días   │ $28.450.000  │  38     │
+│ 16-30 días  │ $29.200.000  │  76     │
+└─────────────┴──────────────┴─────────┘</code></pre>
+<figure>
+<img src="assets/10-por-vencer.png" alt="Facturas por Vencer" />
+<figcaption aria-hidden="true">Facturas por Vencer</figcaption>
+</figure>
+<h3 id="facturas-no-vencidas">3️⃣ Facturas No Vencidas</h3>
+<p>Facturas al día (vencimiento &gt; 30 días):</p>
+<pre><code>📗 FACTURAS NO VENCIDAS
+
+Total: $245.890.000
+Facturas: 312
+Clientes: 89
+
+Promedio días para vencer: 68 días</code></pre>
+<h3 id="facturas-por-cliente">4️⃣ Facturas por Cliente</h3>
+<p>Búsqueda individual del estado de cuenta:</p>
+<ol type="1">
+<li>Seleccionar <strong>“Facturas por Cliente”</strong></li>
+<li>Buscar el cliente</li>
+<li>Ver estado de cuenta detallado</li>
+</ol>
+<pre><code>📊 ESTADO DE CUENTA
+Cliente: Tecno Industrial S.A.
+
+┌──────────┬────────────┬──────────────┬─────────┐
+│ N° Fact. │ Fecha Venc │ Monto        │ Estado  │
+├──────────┼────────────┼──────────────┼─────────┤
+│ F-001234 │ 2025-11-15 │ $2.500.000   │ Al día  │
+│ F-001189 │ 2025-11-08 │ $3.200.000   │ Al día  │
+│ F-001045 │ 2025-10-25 │ $1.800.000   │ Vencida │
+├──────────┼────────────┼──────────────┼─────────┤
+│ TOTAL    │            │ $7.500.000   │         │
+└──────────┴────────────┴──────────────┴─────────┘
+
+Vencido: $1.800.000 (11 días mora)
+Al día: $5.700.000</code></pre>
+<!-- ![Estado Cuenta Cliente](assets/11-estado-cuenta.png) -->
+<blockquote>
+<p>📸 <em>Imagen disponible próximamente</em></p>
+</blockquote>
+<h3 id="top-clientes-morosos">5️⃣ Top Clientes Morosos</h3>
+<p>Ranking de clientes con mayor morosidad:</p>
+<pre><code>🔴 TOP 10 CLIENTES MOROSOS
+
+1. Cliente Alpha S.A.
+   Deuda: $12.500.000 | Mora: 45 días
+   
+2. Industrias Beta Ltda.
+   Deuda: $8.900.000 | Mora: 38 días
+   
+3. Comercial Gamma
+   Deuda: $7.200.000 | Mora: 62 días
+
+[... continúa hasta 10]</code></pre>
+<h3 id="estado-general-cartera">6️⃣ Estado General Cartera</h3>
+<p><strong>NUEVA FUNCIONALIDAD</strong> - Vista panorámica completa:</p>
+<pre><code>📊 ESTADO GENERAL CARTERA
+
+Total Cartera: $461.980.500
+Facturas: 555
+Clientes: 157
+
+┌──────────────────┬──────────────┬────────┬──────┐
+│ Categoría        │ Monto        │ Fact.  │ %    │
+├──────────────────┼──────────────┼────────┼──────┤
+│ 📗 No Vencidas   │ $245.890.000 │  312   │ 53%  │
+│ 📙 0-30 días     │ $45.200.000  │   42   │ 10%  │
+│ 📒 31-60 días    │ $38.500.000  │   28   │  8%  │
+│ 📕 61-90 días    │ $25.340.500  │   12   │  5%  │
+│ 🔴 91-120 días   │ $12.450.000  │    8   │  3%  │
+│ ⚫ 121-365 días  │ $8.900.000   │    5   │  2%  │
+│ 💀 +365 días     │ $2.700.000   │    3   │  1%  │
+├──────────────────┼──────────────┼────────┼──────┤
+│ 💰 TOTAL         │ $461.980.500 │  555   │ 100% │
+└──────────────────┴──────────────┴────────┴──────┘</code></pre>
+<p><strong>Acciones:</strong></p>
+<ul>
+<li>👥 <strong>Ver por RSM</strong>: Análisis agrupado por
+ejecutivo</li>
+<li>📥 <strong>Descargar Excel</strong>: 5 hojas con detalle
+completo</li>
+</ul>
+<!-- ![Estado General Cartera](assets/12-estado-general.png) -->
+<blockquote>
+<p>📸 <em>Imagen disponible próximamente</em></p>
+</blockquote>
+<h3 id="vista-por-rsm-ejecutivo-de-ventas">Vista por RSM (Ejecutivo de
+Ventas)</h3>
+<p>Al seleccionar <strong>“Ver por RSM”</strong>:</p>
+<pre><code>📊 CARTERA POR RSM
+
+┌───────────────────┬──────────────┬────────┬─────────┐
+│ RSM               │ Total        │ Fact.  │ Client. │
+├───────────────────┼──────────────┼────────┼─────────┤
+│ Juan Pérez        │ $125.500.000 │  145   │   32    │
+│ María González    │ $98.750.000  │  128   │   28    │
+│ Carlos Ramírez    │ $87.230.500  │  106   │   24    │
+│ Ana Martínez      │ $75.900.000  │   89   │   19    │
+│ Pedro Silva       │ $74.600.000  │   87   │   22    │
+├───────────────────┼──────────────┼────────┼─────────┤
+│ 💰 TOTAL          │ $461.980.500 │  555   │  125    │
+└───────────────────┴──────────────┴────────┴─────────┘</code></pre>
+<p><strong>Seleccionar RSM para:</strong></p>
+<ul>
+<li>📥 Descargar Excel personalizado con 5 hojas:
+<ol type="1">
+<li><strong>Resumen</strong>: Totales por categoría</li>
+<li><strong>Vencidas</strong>: Facturas en mora</li>
+<li><strong>Por Vencer</strong>: Próximas a vencer</li>
+<li><strong>No Vencidas</strong>: Al día</li>
+<li><strong>Todas</strong>: Detalle completo</li>
+</ol></li>
+</ul>
+<!-- ![Vista por RSM](assets/13-por-rsm.png) -->
+<blockquote>
+<p>📸 <em>Imagen disponible próximamente</em></p>
+</blockquote>
+<hr />
+<h2 id="ℹ-información-ssab">ℹ️ Información SSAB</h2>
+<h3 id="acceso-rápido-a-datos-corporativos">Acceso Rápido a Datos
+Corporativos</h3>
+<p><strong>Acceso:</strong> Menú Principal → ℹ️ Info SSAB</p>
+<p>Información disponible:</p>
+<pre><code>┌─────────────────────────────────┐
+│  INFORMACIÓN SSAB CHILE         │
+├─────────────────────────────────┤
+│  📞 Contacto                    │
+│  📍 Dirección                   │
+│  🏢 Sucursales                  │
+│  📧 Emails Departamentos        │
+│  🕐 Horarios Atención           │
+│  🌐 Sitio Web                   │
+└─────────────────────────────────┘</code></pre>
+<h3 id="datos-de-contacto">Datos de Contacto</h3>
+<pre><code>📞 CONTACTO SSAB CHILE
+
+Casa Matriz:
+📍 Av. Apoquindo 4800, Piso 11
+   Las Condes, Santiago
+
+📞 Teléfono: +56 2 2950 3000
+📠 Fax: +56 2 2950 3099
+
+📧 Emails:
+   • Ventas: ventas@ssab.cl
+   • Soporte: soporte@ssab.cl
+   • Facturación: facturacion@ssab.cl
+
+🕐 Horario:
+   Lunes a Viernes: 08:30 - 18:00
+   Sábado: Cerrado
+   Domingo: Cerrado
+
+🌐 www.ssab.com/es-cl</code></pre>
+<hr />
+<h2 id="casos-de-uso-prácticos">💼 Casos de Uso Prácticos</h2>
+<h3 id="caso-1-consulta-rápida-de-cliente-en-terreno">Caso 1: Consulta
+Rápida de Cliente en Terreno</h3>
+<p><strong>Situación:</strong> Estás visitando un cliente y necesitas
+verificar su línea de crédito disponible.</p>
+<p><strong>Pasos:</strong></p>
+<ol type="1">
+<li>Abrir Telegram → <span class="citation"
+data-cites="oxcl_bot">@oxcl_bot</span></li>
+<li>Menú Principal → 👥 Clientes</li>
+<li>🔍 Buscar por Nombre → Ingresar nombre</li>
+<li>Ver <strong>Línea Crédito</strong> y
+<strong>Disponible</strong></li>
+</ol>
+<p><strong>Tiempo:</strong> 15 segundos</p>
+<!-- ![Caso Uso 1](assets/caso-uso-1.png) -->
+<blockquote>
+<p>📸 <em>Imagen disponible próximamente</em></p>
+</blockquote>
+<hr />
+<h3 id="caso-2-generar-reporte-de-morosidad-para-reunión">Caso 2:
+Generar Reporte de Morosidad para Reunión</h3>
+<p><strong>Situación:</strong> Necesitas un reporte actualizado de
+clientes morosos para reunión gerencial.</p>
+<p><strong>Pasos:</strong></p>
+<ol type="1">
+<li>Menú Principal → 💰 Cuentas x Cobrar</li>
+<li>1️⃣ Facturas Vencidas</li>
+<li>👥 Ver por RSM</li>
+<li>Seleccionar tu nombre</li>
+<li>📥 Descargar Excel</li>
+</ol>
+<p><strong>Tiempo:</strong> 30 segundos <strong>Resultado:</strong>
+Excel con 5 hojas detalladas</p>
+<!-- ![Caso Uso 2](assets/caso-uso-2.png) -->
+<blockquote>
+<p>📸 <em>Imagen disponible próximamente</em></p>
+</blockquote>
+<hr />
+<h3 id="caso-3-enviar-ficha-técnica-a-cliente">Caso 3: Enviar Ficha
+Técnica a Cliente</h3>
+<p><strong>Situación:</strong> Cliente solicita información técnica de
+un producto.</p>
+<p><strong>Pasos:</strong></p>
+<ol type="1">
+<li>Menú Principal → 📋 Fichas Técnicas</li>
+<li>🔍 Buscar Producto → Ingresar código</li>
+<li>Ver Ficha Completa</li>
+<li>📄 Descargar PDF</li>
+<li>Compartir PDF con cliente vía WhatsApp/Email</li>
+</ol>
+<p><strong>Tiempo:</strong> 20 segundos</p>
+<!-- ![Caso Uso 3](assets/caso-uso-3.png) -->
+<blockquote>
+<p>📸 <em>Imagen disponible próximamente</em></p>
+</blockquote>
+<hr />
+<h3 id="caso-4-verificar-estado-de-cuenta-específico">Caso 4: Verificar
+Estado de Cuenta Específico</h3>
+<p><strong>Situación:</strong> Cliente consulta sus facturas
+pendientes.</p>
+<p><strong>Pasos:</strong></p>
+<ol type="1">
+<li>Menú Principal → 💰 Cuentas x Cobrar</li>
+<li>4️⃣ Facturas por Cliente</li>
+<li>Buscar cliente</li>
+<li>Ver estado completo</li>
+<li>📥 Descargar Excel si necesita</li>
+<li>📧 Enviar al cliente</li>
+</ol>
+<p><strong>Tiempo:</strong> 25 segundos</p>
+<!-- ![Caso Uso 4](assets/caso-uso-4.png) -->
+<blockquote>
+<p>📸 <em>Imagen disponible próximamente</em></p>
+</blockquote>
+<hr />
+<h3 id="caso-5-análisis-panorámico-de-cartera">Caso 5: Análisis
+Panorámico de Cartera</h3>
+<p><strong>Situación:</strong> Necesitas visión general del estado de
+toda la cartera.</p>
+<p><strong>Pasos:</strong></p>
+<ol type="1">
+<li>Menú Principal → 💰 Cuentas x Cobrar</li>
+<li>6️⃣ Estado General Cartera</li>
+<li>Revisar distribución por rangos</li>
+<li>👥 Ver por RSM para análisis por vendedor</li>
+<li>📥 Descargar Excel consolidado</li>
+</ol>
+<p><strong>Tiempo:</strong> 20 segundos <strong>Resultado:</strong>
+Vista completa de $461M+ en cartera</p>
+<!-- ![Caso Uso 5](assets/caso-uso-5.png) -->
+<blockquote>
+<p>📸 <em>Imagen disponible próximamente</em></p>
+</blockquote>
+<hr />
+<h2 id="preguntas-frecuentes">❓ Preguntas Frecuentes</h2>
+<h3 id="acceso-y-seguridad">Acceso y Seguridad</h3>
+<p><strong>P: ¿Cómo obtengo acceso al bot?</strong> R: Contacta al
+administrador del sistema con tu usuario de Telegram (<span
+class="citation" data-cites="usuario">@usuario</span>). El acceso se
+otorga según tu rol en la empresa.</p>
+<p><strong>P: ¿Es seguro usar el bot?</strong> R: Sí. El bot tiene
+control de acceso por usuario, todas las comunicaciones van cifradas por
+Telegram, y no almacena información sensible localmente.</p>
+<p><strong>P: ¿Puedo usar el bot desde mi celular personal?</strong> R:
+Sí, siempre que tu usuario de Telegram esté autorizado.</p>
+<hr />
+<h3 id="datos-e-información">Datos e Información</h3>
+<p><strong>P: ¿Qué tan actualizados están los datos?</strong> R: Los
+datos se actualizan diariamente desde el sistema SAP. La información de
+cartera refleja el cierre del día anterior.</p>
+<p><strong>P: ¿Los precios en las fichas técnicas incluyen IVA?</strong>
+R: No, todos los precios mostrados son netos (sin IVA).</p>
+<p><strong>P: ¿Puedo ver facturas pagadas?</strong> R: Actualmente el
+bot solo muestra facturas pendientes (por cobrar).</p>
+<hr />
+<h3 id="reportes-y-exportaciones">Reportes y Exportaciones</h3>
+<p><strong>P: ¿En qué formato se descargan los reportes?</strong> R:
+Excel (.xlsx) para reportes de datos, PDF para fichas técnicas, y vCard
+(.vcf) para contactos.</p>
+<p><strong>P: ¿Cuánto tiempo permanecen los archivos
+disponibles?</strong> R: Los archivos generados están disponibles por 24
+horas. Después debes volver a generarlos.</p>
+<p><strong>P: ¿Puedo personalizar los reportes?</strong> R: Actualmente
+los reportes tienen formatos predefinidos. Para reportes personalizados,
+contacta al administrador.</p>
+<hr />
+<h3 id="funcionalidades">Funcionalidades</h3>
+<p><strong>P: ¿Puedo registrar pagos desde el bot?</strong> R: No, el
+bot es solo de consulta. Los pagos deben registrarse en SAP.</p>
+<p><strong>P: ¿El bot envía notificaciones automáticas?</strong> R:
+Actualmente no. Debes ingresar al bot para consultar información.</p>
+<p><strong>P: ¿Puedo solicitar que se agreguen nuevas
+funcionalidades?</strong> R: Sí, envía tus sugerencias al administrador
+del sistema.</p>
+<hr />
+<h3 id="problemas-técnicos">Problemas Técnicos</h3>
+<p><strong>P: El bot no responde, ¿qué hago?</strong>R:</p>
+<ol type="1">
+<li>Verifica tu conexión a internet</li>
+<li>Cierra y abre Telegram</li>
+<li>Intenta comando /start</li>
+<li>Si persiste, contacta soporte</li>
+</ol>
+<p><strong>P: ¿Qué hago si un reporte no se genera?</strong>R: Puede
+deberse a alto volumen de datos. Intenta:</p>
+<ul>
+<li>Filtrar por rango más pequeño</li>
+<li>Usar la opción por RSM individual</li>
+<li>Intentar en horario de menor demanda</li>
+</ul>
+<p><strong>P: Los datos no coinciden con SAP, ¿por qué?</strong>R: Si
+hay discrepancia, puede deberse a:</p>
+<ul>
+<li>Actualización en proceso (espera 30 min)</li>
+<li>Cambios muy recientes en SAP</li>
+<li>Contacta al administrador si persiste</li>
+</ul>
+<hr />
+<h2 id="soporte-y-contacto">📞 Soporte y Contacto</h2>
+<h3 id="canales-de-soporte">Canales de Soporte</h3>
+<h4 id="administrador-del-sistema-soporte-técnico">Administrador del
+Sistema / Soporte Técnico</h4>
+<ul>
+<li>👤 Nombre: Luis Aguilera</li>
+<li>📧 Email: luis.aguilera@ssab.com</li>
+<li>📞 WhatsApp: https://wa.me/56973881390</li>
+</ul>
+<h4 id="capacitaciones">Capacitaciones</h4>
+<p>Para solicitar capacitación del bot para tu equipo:</p>
+<ul>
+<li>📧 capacitacion@ssab.cl</li>
+<li>📅 Sesiones grupales cada primer jueves del mes</li>
+</ul>
+<hr />
+<h2 id="recursos-adicionales">📚 Recursos Adicionales</h2>
+<h3 id="documentación-técnica">Documentación Técnica</h3>
+<ul>
+<li><a href="../admin/ADMIN_GUIDE.md">Manual de Administración</a></li>
+<li><a href="../dev/DEVELOPER_GUIDE.md">Guía de Desarrollo</a></li>
+<li><a href="../api/API_DOCS.md">API Reference</a></li>
+</ul>
+<h3 id="videos-tutoriales">Videos Tutoriales</h3>
+<ul>
+<li><a href="https://youtube.com/ssab-bot-intro">YouTube: Introducción
+al Bot</a></li>
+<li><a href="https://youtube.com/ssab-bot-cartera">YouTube: Reportes de
+Cartera</a></li>
+<li><a href="https://youtube.com/ssab-bot-fichas">YouTube: Fichas
+Técnicas</a></li>
+</ul>
+<h3 id="actualizaciones">Actualizaciones</h3>
+<p>Suscríbete al canal de novedades:</p>
+<ul>
+<li>📢 Telegram: <span class="citation"
+data-cites="ssab_bot_updates">@ssab_bot_updates</span></li>
+<li>📧 Newsletter mensual</li>
+</ul>
+<hr />
+<h2 id="notas-importantes">📝 Notas Importantes</h2>
+<h3 id="privacidad-y-confidencialidad">Privacidad y
+Confidencialidad</h3>
+<p>⚠️ <strong>IMPORTANTE:</strong></p>
+<ul>
+<li>La información del bot es confidencial y de uso exclusivo SSAB
+Chile</li>
+<li>No compartir credenciales de acceso</li>
+<li>No distribuir reportes fuera de la organización</li>
+<li>Usar solo para fines laborales</li>
+</ul>
+<h3 id="mejores-prácticas">Mejores Prácticas</h3>
+<p>✅ <strong>Recomendaciones:</strong></p>
+<ul>
+<li>Verificar datos críticos contra SAP antes de decisiones
+importantes</li>
+<li>Descargar reportes cuando necesites conservar histórico</li>
+<li>Reportar inconsistencias al administrador</li>
+<li>Sugerir mejoras basadas en tu experiencia de uso</li>
+</ul>
+<hr />
+<h2 id="historial-de-versiones">📄 Historial de Versiones</h2>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 83%" />
+</colgroup>
+<thead>
+<tr>
+<th>Versión</th>
+<th>Fecha</th>
+<th>Cambios Principales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2.0</td>
+<td>Nov 2025</td>
+<td>• Estado General Cartera <code>&lt;br&gt;</code>• Vista por RSM
+<code>&lt;br&gt;</code>• Excel con 5 hojas</td>
+</tr>
+<tr>
+<td>1.5</td>
+<td>Oct 2025</td>
+<td>• Top Clientes Morosos <code>&lt;br&gt;</code>• Mejoras UI</td>
+</tr>
+<tr>
+<td>1.0</td>
+<td>Sep 2025</td>
+<td>• Lanzamiento inicial <code>&lt;br&gt;</code>• Funciones
+básicas</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="checklist-de-inicio-rápido">✅ Checklist de Inicio Rápido</h2>
+<p>Usa esta lista para verificar que dominas las funciones
+esenciales:</p>
+<ul class="task-list">
+<li><label><input type="checkbox" />He iniciado conversación con <span
+class="citation" data-cites="oxcl_bot">@oxcl_bot</span></label></li>
+<li><label><input type="checkbox" />Puedo buscar un cliente por
+nombre</label></li>
+<li><label><input type="checkbox" />Puedo ver la línea de crédito de un
+cliente</label></li>
+<li><label><input type="checkbox" />Sé cómo buscar una ficha
+técnica</label></li>
+<li><label><input type="checkbox" />Puedo descargar un PDF de
+producto</label></li>
+<li><label><input type="checkbox" />Entiendo los rangos de
+morosidad</label></li>
+<li><label><input type="checkbox" />Sé generar reporte de facturas
+vencidas</label></li>
+<li><label><input type="checkbox" />Puedo usar la vista Estado General
+Cartera</label></li>
+<li><label><input type="checkbox" />Sé filtrar por mi RSM</label></li>
+<li><label><input type="checkbox" />Puedo descargar reportes
+Excel</label></li>
+</ul>
+<p><strong>Si has completado todos los ítems, ¡estás listo para usar el
+bot profesionalmente! 🎉</strong></p>
+<hr />
+<div data-align="center">
+<p><strong>Bot de Gestión Comercial SSAB Chile</strong> <em>Versión 2.0
+- Noviembre 2025</em></p>
+<hr />
+<p><em>Para más información, contacta a soporte.bot@ssab.cl</em></p>
+</div>
+</body>
+</html>

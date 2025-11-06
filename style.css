@@ -1,0 +1,281 @@
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #24292e;
+  font-size: 14px;
+}
+
+h1 { 
+  border-bottom: 2px solid #eaecef; 
+  padding-bottom: 0.3em;
+  font-size: 1.8em;
+  margin-top: 20px;
+}
+
+h2 { 
+  border-bottom: 1px solid #eaecef; 
+  padding-bottom: 0.3em;
+  font-size: 1.4em;
+  margin-top: 20px;
+}
+
+h3 { 
+  font-size: 1.1em;
+  margin-top: 16px;
+}
+
+/* IMPORTANTE: Tamaño fijo de imágenes para pantalla */
+img {
+  max-width: 497px;
+  max-height: 353px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 12px auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+/* Centrar y estilizar pies de foto */
+figure {
+  text-align: center;
+  margin: 20px auto;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 8px;
+}
+
+code {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 90%;
+  margin: 0;
+  padding: 0.2em 0.4em;
+  font-family: "SFMono-Regular", Consolas, Monaco, monospace;
+}
+
+pre {
+  background-color: #f6f8fa;
+  border-radius: 4px;
+  font-size: 85%;
+  line-height: 1.4;
+  overflow: auto;
+  padding: 12px;
+  margin: 16px 0;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  font-size: 11px;
+}
+
+blockquote {
+  border-left: 3px solid #0969da;
+  color: #57606a;
+  padding: 0 1em;
+  margin: 16px 0;
+  font-size: 13px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+  font-size: 12px;
+}
+
+table th, table td {
+  border: 1px solid #dfe2e5;
+  padding: 5px 10px;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+a {
+  color: #0969da;
+  text-decoration: none;
+}
+
+#TOC {
+  background-color: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 24px;
+  font-size: 13px;
+}
+
+#TOC ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#TOC ul ul {
+  padding-left: 16px;
+}
+
+/* ESTILOS DE IMPRESIÓN - IMÁGENES MUY PEQUEÑAS */
+@media print {
+  @page {
+    margin: 1.5cm 1.2cm;
+    size: letter;
+  }
+  
+  body {
+    max-width: 100%;
+    font-size: 9pt;
+    line-height: 1.25;
+  }
+  
+  /* CRÍTICO: Imágenes tamaño óptimo para impresión */
+  img {
+    max-width: 420px;
+    max-height: 309px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    page-break-inside: avoid;
+    margin: 6px auto;
+    display: block;
+  }
+  
+  /* Centrar pies de foto en impresión */
+  figure {
+    page-break-inside: avoid;
+    text-align: center;
+    margin: 8px auto;
+  }
+  
+  figcaption {
+    text-align: center;
+    font-style: italic;
+    color: #333;
+    font-size: 8pt;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  
+  h1 {
+    font-size: 15pt;
+    page-break-before: always;
+    page-break-after: avoid;
+    margin-top: 0;
+    margin-bottom: 8pt;
+    padding-bottom: 4pt;
+  }
+  
+  /* Excepción: primer h1 no debe tener salto antes */
+  h1:first-of-type {
+    page-break-before: auto;
+  }
+  
+  h2 {
+    font-size: 12pt;
+    page-break-after: avoid;
+    page-break-before: always;
+    margin-top: 0;
+    margin-bottom: 6pt;
+    padding-bottom: 3pt;
+  }
+  
+  /* Los primeros H2 después del título no saltan */
+  h1 + h2 {
+    page-break-before: auto;
+  }
+  
+  h3 {
+    font-size: 10.5pt;
+    page-break-after: avoid;
+    margin-top: 8pt;
+    margin-bottom: 4pt;
+  }
+  
+  /* Evitar saltos dentro de estos elementos */
+  pre, blockquote, table {
+    page-break-inside: avoid;
+    font-size: 7.5pt;
+    margin: 6pt 0;
+  }
+  
+  code {
+    font-size: 7.5pt;
+  }
+  
+  /* Reducir espaciado de párrafos */
+  p {
+    orphans: 3;
+    widows: 3;
+    margin-top: 4pt;
+    margin-bottom: 4pt;
+  }
+  
+  /* Evitar salto justo después de título */
+  h1 + p, h2 + p, h3 + p {
+    page-break-before: avoid;
+  }
+  
+  /* Listas más compactas */
+  ul, ol {
+    page-break-inside: auto;
+    margin-top: 4pt;
+    margin-bottom: 4pt;
+    padding-left: 20pt;
+  }
+  
+  li {
+    margin-bottom: 2pt;
+  }
+  
+  /* Blockquotes más compactos */
+  blockquote {
+    padding: 4pt 8pt;
+    margin: 6pt 0;
+  }
+  
+  /* Tablas más compactas */
+  table {
+    font-size: 7.5pt;
+  }
+  
+  table th, table td {
+    padding: 3pt 6pt;
+  }
+  
+  /* HR más delgado */
+  hr {
+    margin: 8pt 0;
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+  
+  a {
+    color: #000;
+  }
+  
+  #TOC {
+    page-break-after: always;
+    padding: 10pt;
+    margin-bottom: 12pt;
+  }
+  
+  #TOC ul {
+    margin: 4pt 0;
+  }
+  
+  #TOC li {
+    margin-bottom: 3pt;
+  }
+}
