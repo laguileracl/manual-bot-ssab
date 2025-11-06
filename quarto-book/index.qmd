@@ -10,7 +10,7 @@
 
 Bienvenido al **Manual de Usuario del Bot de Gestión Comercial SSAB Chile** 🤖
 
-Este manual ha sido diseñado para ayudarte a aprovechar al máximo las capacidades del bot de Telegram **[@oxcl_bot](https://t.me/oxcl_bot)**, una herramienta integral para:
+Este manual ha sido diseñado para ayudarte a aprovechar al máximo las capacidades del bot de Telegram **[@oxcl_bot](https://t.me/oxcl_bot){target="_blank"}**, una herramienta integral para:
 
 ::: {.grid}
 
