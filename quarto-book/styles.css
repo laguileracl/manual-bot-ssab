@@ -1,0 +1,471 @@
+/* Estilos adicionales profesionales */
+
+/* ========================================
+   LAYOUT Y ESTRUCTURA
+   ======================================== */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+}
+
+.page-columns {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   TIPOGRAFÍA PROFESIONAL
+   ======================================== */
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #002F6C 0%, #0A4B9A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  color: #002F6C;
+  position: relative;
+  padding-left: 20px;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 70%;
+  background: linear-gradient(180deg, #002F6C 0%, #E2001A 100%);
+  border-radius: 2px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #0A4B9A;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #002F6C;
+}
+
+/* ========================================
+   IMÁGENES CON EFECTO PROFESIONAL
+   ======================================== */
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 
+    0 10px 40px rgba(0, 47, 108, 0.1),
+    0 2px 8px rgba(0, 47, 108, 0.06);
+  margin: 2rem auto;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: translateY(-4px);
+  box-shadow: 
+    0 20px 60px rgba(0, 47, 108, 0.15),
+    0 4px 12px rgba(0, 47, 108, 0.1);
+}
+
+/* Lightbox efecto para imágenes */
+.lightbox img {
+  cursor: zoom-in;
+}
+
+/* ========================================
+   CALLOUTS MEJORADOS
+   ======================================== */
+
+.callout {
+  border: none;
+  border-left: 4px solid;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  background: #F8F9FA;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.callout:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.callout-tip {
+  border-left-color: #28a745;
+  background: linear-gradient(135deg, #f0fff4 0%, #e6ffee 100%);
+}
+
+.callout-note {
+  border-left-color: #17a2b8;
+  background: linear-gradient(135deg, #e7f7f9 0%, #d6f2f7 100%);
+}
+
+.callout-warning {
+  border-left-color: #ffc107;
+  background: linear-gradient(135deg, #fffbea 0%, #fff8dd 100%);
+}
+
+.callout-important {
+  border-left-color: #E2001A;
+  background: linear-gradient(135deg, #ffe6e9 0%, #ffd6dc 100%);
+}
+
+.callout-caution {
+  border-left-color: #dc3545;
+  background: linear-gradient(135deg, #ffe5e7 0%, #ffd4d8 100%);
+}
+
+.callout-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ========================================
+   CÓDIGO PROFESIONAL
+   ======================================== */
+
+pre {
+  background: linear-gradient(135deg, #f8f9fa 0%, #f1f3f5 100%);
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+code {
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+  font-size: 0.9em;
+  padding: 0.2em 0.4em;
+  background: #f1f3f5;
+  border-radius: 4px;
+}
+
+pre code {
+  padding: 0;
+  background: none;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+/* ========================================
+   TABLAS PROFESIONALES
+   ======================================== */
+
+table {
+  width: 100%;
+  margin: 2rem 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+thead {
+  background: linear-gradient(135deg, #002F6C 0%, #0A4B9A 100%);
+  color: white;
+}
+
+thead th {
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+  text-align: left;
+  letter-spacing: 0.02em;
+  border: none;
+}
+
+tbody td {
+  padding: 0.875rem 1.25rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+tbody tr {
+  background: white;
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+tbody tr:hover {
+  background: #e7f1ff;
+}
+
+/* ========================================
+   LISTAS MEJORADAS
+   ======================================== */
+
+ul, ol {
+  padding-left: 2rem;
+  margin: 1.5rem 0;
+}
+
+li {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+
+li::marker {
+  color: #002F6C;
+  font-weight: 600;
+}
+
+/* ========================================
+   NAVEGACIÓN LATERAL
+   ======================================== */
+
+.sidebar-navigation {
+  padding: 1.5rem;
+  background: #ffffff;
+  border-right: 1px solid #e9ecef;
+}
+
+.sidebar-navigation a {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  display: block;
+  margin: 0.25rem 0;
+}
+
+.sidebar-navigation a:hover {
+  background: #f8f9fa;
+  text-decoration: none;
+  transform: translateX(4px);
+}
+
+.sidebar-navigation a.active {
+  background: linear-gradient(135deg, #002F6C 0%, #0A4B9A 100%);
+  color: white !important;
+  font-weight: 600;
+}
+
+/* ========================================
+   TOC (Table of Contents)
+   ======================================== */
+
+#TOC {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+#TOC ul {
+  padding-left: 1.5rem;
+}
+
+#TOC li {
+  margin-bottom: 0.5rem;
+}
+
+#TOC a {
+  color: #002F6C;
+  font-weight: 500;
+}
+
+#TOC a:hover {
+  color: #E2001A;
+}
+
+/* ========================================
+   BREADCRUMBS
+   ======================================== */
+
+.breadcrumb {
+  background: transparent;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.breadcrumb-item {
+  color: #6c757d;
+}
+
+.breadcrumb-item.active {
+  color: #002F6C;
+  font-weight: 600;
+}
+
+/* ========================================
+   BOTONES Y ENLACES
+   ======================================== */
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #002F6C 0%, #0A4B9A 100%);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 47, 108, 0.3);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #E2001A 0%, #FF2D55 100%);
+  color: white;
+}
+
+a.download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #002F6C 0%, #0A4B9A 100%);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  margin: 1rem 0;
+}
+
+a.download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 47, 108, 0.3);
+  text-decoration: none;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+.page-footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  border-top: 2px solid #e9ecef;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+/* ========================================
+   BADGES
+   ======================================== */
+
+.badge {
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-size: 0.85em;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 6px;
+  margin: 0 0.25rem;
+}
+
+/* ========================================
+   ANIMACIONES
+   ======================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content {
+  animation: fadeIn 0.5s ease;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  .page-columns {
+    padding: 0 1rem;
+  }
+}
+
+/* ========================================
+   UTILIDADES
+   ======================================== */
+
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.shadow {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #002F6C 0%, #E2001A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

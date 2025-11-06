@@ -1,0 +1,17 @@
+<svg width="200" height="60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo -->
+  <rect width="200" height="60" fill="#002F6C"/>
+  
+  <!-- Texto SSAB -->
+  <text x="20" y="40" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="bold" fill="#FFFFFF">
+    SSAB
+  </text>
+  
+  <!-- Línea decorativa -->
+  <rect x="140" y="20" width="40" height="4" fill="#E2001A"/>
+  
+  <!-- Texto Chile -->
+  <text x="140" y="45" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#FFFFFF">
+    Chile
+  </text>
+</svg>

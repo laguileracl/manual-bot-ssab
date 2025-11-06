@@ -1,0 +1,42 @@
+.
+├── ESTRUCTURA.txt
+├── Manual-de-Usuario---Bot-SSAB-Chile.tex
+├── PUBLICACION.md
+├── README.md
+├── _quarto.yml
+├── assets
+│   ├── 01-buscar-bot.png
+│   ├── 02-inicio-bot.png
+│   ├── 03-menu-principal.png
+│   ├── 04-busqueda-nombre.png
+│   ├── 04-menu-clientes.png
+│   ├── 05-ficha-cliente.png
+│   ├── 06-catalogo.png
+│   ├── 07-ficha-tecnica-01.png
+│   ├── 07-ficha-tecnica-02.png
+│   ├── 08-menu-cxc.png
+│   ├── 09-vencidas.png
+│   └── 10-por-vencer.png
+├── casos-uso.qmd
+├── clientes.qmd
+├── convert_manual_to_quarto.py
+├── cuentas.qmd
+├── custom.scss
+├── faq.qmd
+├── fichas.qmd
+├── index.qmd
+├── info-ssab.qmd
+├── inicio.qmd
+├── intro.qmd
+├── publish.sh
+├── references.bib
+├── references.qmd
+├── requisitos.qmd
+└── site_libs
+    ├── bootstrap
+    ├── clipboard
+    ├── quarto-html
+    ├── quarto-nav
+    └── quarto-search
+
+8 directories, 32 files

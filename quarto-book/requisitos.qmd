@@ -1,0 +1,19 @@
+# 🔑 Requisitos Previos
+
+### Antes de Comenzar
+
+1. **Telegram Instalado**
+
+   - Versión móvil (iOS/Android) o desktop
+   - Cuenta Telegram activa
+2. **Acceso Autorizado**
+
+   - Contactar al administrador del sistema
+   - Proporcionar tu usuario de Telegram (@usuario)
+   - Esperar confirmación de acceso
+3. **Conexión a Internet**
+
+   - Necesaria para todas las operaciones
+   - Conexión estable recomendada para descargas
+
+---

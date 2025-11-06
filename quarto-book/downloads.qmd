@@ -1,0 +1,93 @@
+# 📚 Guía de Descarga y Formatos
+
+El Manual de Usuario del Bot SSAB Chile está disponible en múltiples formatos para tu conveniencia.
+
+## 📄 Formatos Disponibles
+
+### 🌐 Versión Web (Recomendada)
+
+La versión web ofrece la mejor experiencia con:
+
+- ✅ Navegación interactiva entre capítulos
+- ✅ Búsqueda instantánea en todo el contenido
+- ✅ Modo claro y oscuro
+- ✅ Responsive (funciona en móvil, tablet y desktop)
+- ✅ Siempre actualizado
+
+**Acceso:** Estás leyéndola ahora mismo en [https://laguileracl.github.io/manual-bot-ssab/](https://laguileracl.github.io/manual-bot-ssab/)
+
+### 📕 PDF Completo
+
+Descarga el manual completo en formato PDF para:
+
+- 📄 Lectura offline
+- 🖨️ Impresión del manual
+- 📧 Compartir por email
+- 💾 Archivar localmente
+
+<div class="text-center mt-4 mb-4">
+
+[📥 Descargar PDF Completo](Manual-de-Usuario---Bot-SSAB-Chile.pdf){.btn .btn-primary .download style="font-size: 1.1rem; padding: 1rem 2rem;"}
+
+</div>
+
+**Características del PDF:**
+- Tamaño: ~8-12 MB (incluye todas las imágenes)
+- Formato: PDF/A (archivado a largo plazo)
+- Páginas numeradas con encabezados
+- Tabla de contenidos clickeable
+- Enlaces internos funcionales
+- Optimizado para impresión
+
+### 📱 EPUB (Libro Electrónico)
+
+Para dispositivos móviles y lectores de ebooks:
+
+<div class="text-center mt-4 mb-4">
+
+[📥 Descargar EPUB](Manual-Bot-SSAB-Chile.epub){.btn .btn-secondary style="font-size: 1.1rem; padding: 1rem 2rem;"}
+
+</div>
+
+**Compatible con:**
+- 📱 Apple Books (iPhone/iPad)
+- 📚 Google Play Books (Android)
+- 🔖 Kindle (convertir con Calibre)
+- 💻 Adobe Digital Editions
+- 🖥️ Calibre (PC/Mac/Linux)
+
+## 💾 Cómo Usar Cada Formato
+
+### Para lectura en pantalla
+→ **Usa la versión web** (esta página)
+
+### Para imprimir
+→ **Descarga el PDF** y imprime las secciones que necesites
+
+### Para leer en el móvil
+→ **Descarga el EPUB** y ábrelo en Apple Books o Google Play Books
+
+### Para compartir con el equipo
+→ **Envía el link web** o el PDF según prefieras
+
+## 🔄 Actualizaciones
+
+::: {.callout-note}
+## Mantente Actualizado
+
+- **Versión Web:** Se actualiza automáticamente
+- **PDF/EPUB:** Revisa esta página periódicamente para descargar la última versión
+- **Versión actual:** 2.0 (Noviembre 2025)
+:::
+
+## 📞 ¿Necesitas otro formato?
+
+Si necesitas el manual en otro formato (Word, Markdown, HTML standalone, etc.), contacta a:
+
+**Luis Aguilera A.**  
+📧 [luis.aguilera@ssab.com](mailto:luis.aguilera@ssab.com)  
+📱 [WhatsApp](https://wa.me/56973881390)
+
+---
+
+[← Volver al inicio](index.qmd){.btn .btn-outline-primary}

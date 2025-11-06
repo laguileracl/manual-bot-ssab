@@ -1,0 +1,180 @@
+# ❓ Preguntas Frecuentes
+
+### Acceso y Seguridad
+
+**P: ¿Cómo obtengo acceso al bot?**
+R: Contacta al administrador del sistema con tu usuario de Telegram (@usuario). El acceso se otorga según tu rol en la empresa.
+
+**P: ¿Es seguro usar el bot?**
+R: Sí. El bot tiene control de acceso por usuario, todas las comunicaciones van cifradas por Telegram, y no almacena información sensible localmente.
+
+**P: ¿Puedo usar el bot desde mi celular personal?**
+R: Sí, siempre que tu usuario de Telegram esté autorizado.
+
+---
+
+### Datos e Información
+
+**P: ¿Qué tan actualizados están los datos?**
+R: Los datos se actualizan diariamente desde el sistema SAP. La información de cartera refleja el cierre del día anterior.
+
+**P: ¿Los precios en las fichas técnicas incluyen IVA?**
+R: No, todos los precios mostrados son netos (sin IVA).
+
+**P: ¿Puedo ver facturas pagadas?**
+R: Actualmente el bot solo muestra facturas pendientes (por cobrar).
+
+---
+
+### Reportes y Exportaciones
+
+**P: ¿En qué formato se descargan los reportes?**
+R: Excel (.xlsx) para reportes de datos, PDF para fichas técnicas, y vCard (.vcf) para contactos.
+
+**P: ¿Cuánto tiempo permanecen los archivos disponibles?**
+R: Los archivos generados están disponibles por 24 horas. Después debes volver a generarlos.
+
+**P: ¿Puedo personalizar los reportes?**
+R: Actualmente los reportes tienen formatos predefinidos. Para reportes personalizados, contacta al administrador.
+
+---
+
+### Funcionalidades
+
+**P: ¿Puedo registrar pagos desde el bot?**
+R: No, el bot es solo de consulta. Los pagos deben registrarse en SAP.
+
+**P: ¿El bot envía notificaciones automáticas?**
+R: Actualmente no. Debes ingresar al bot para consultar información.
+
+**P: ¿Puedo solicitar que se agreguen nuevas funcionalidades?**
+R: Sí, envía tus sugerencias al administrador del sistema.
+
+---
+
+### Problemas Técnicos
+
+**P: El bot no responde, ¿qué hago?**R:
+
+1. Verifica tu conexión a internet
+2. Cierra y abre Telegram
+3. Intenta comando /start
+4. Si persiste, contacta soporte
+
+**P: ¿Qué hago si un reporte no se genera?**R: Puede deberse a alto volumen de datos. Intenta:
+
+- Filtrar por rango más pequeño
+- Usar la opción por RSM individual
+- Intentar en horario de menor demanda
+
+**P: Los datos no coinciden con SAP, ¿por qué?**R: Si hay discrepancia, puede deberse a:
+
+- Actualización en proceso (espera 30 min)
+- Cambios muy recientes en SAP
+- Contacta al administrador si persiste
+
+---
+
+## 📞 Soporte y Contacto
+
+### Canales de Soporte
+
+#### Administrador del Sistema / Soporte Técnico
+
+- 👤 Nombre: Luis Aguilera
+- 📧 Email: luis.aguilera@ssab.com
+- 📞 WhatsApp: https://wa.me/56973881390
+
+#### Capacitaciones
+
+Para solicitar capacitación del bot para tu equipo:
+
+- 📧 capacitacion@ssab.cl
+- 📅 Sesiones grupales cada primer jueves del mes
+
+---
+
+## 📚 Recursos Adicionales
+
+### Documentación Técnica
+
+- [Manual de Administración](../admin/ADMIN_GUIDE.md)
+- [Guía de Desarrollo](../dev/DEVELOPER_GUIDE.md)
+- [API Reference](../api/API_DOCS.md)
+
+### Videos Tutoriales
+
+- [YouTube: Introducción al Bot](https://youtube.com/ssab-bot-intro)
+- [YouTube: Reportes de Cartera](https://youtube.com/ssab-bot-cartera)
+- [YouTube: Fichas Técnicas](https://youtube.com/ssab-bot-fichas)
+
+### Actualizaciones
+
+Suscríbete al canal de novedades:
+
+- 📢 Telegram: @ssab_bot_updates
+- 📧 Newsletter mensual
+
+---
+
+## 📝 Notas Importantes
+
+### Privacidad y Confidencialidad
+
+⚠️ **IMPORTANTE:**
+
+- La información del bot es confidencial y de uso exclusivo SSAB Chile
+- No compartir credenciales de acceso
+- No distribuir reportes fuera de la organización
+- Usar solo para fines laborales
+
+### Mejores Prácticas
+
+✅ **Recomendaciones:**
+
+- Verificar datos críticos contra SAP antes de decisiones importantes
+- Descargar reportes cuando necesites conservar histórico
+- Reportar inconsistencias al administrador
+- Sugerir mejoras basadas en tu experiencia de uso
+
+---
+
+## 📄 Historial de Versiones
+
+| Versión | Fecha    | Cambios Principales                                                             |
+| -------- | -------- | ------------------------------------------------------------------------------- |
+| 2.0      | Nov 2025 | • Estado General Cartera `<br>`• Vista por RSM `<br>`• Excel con 5 hojas |
+| 1.5      | Oct 2025 | • Top Clientes Morosos `<br>`• Mejoras UI                                   |
+| 1.0      | Sep 2025 | • Lanzamiento inicial `<br>`• Funciones básicas                            |
+
+---
+
+## ✅ Checklist de Inicio Rápido
+
+Usa esta lista para verificar que dominas las funciones esenciales:
+
+- [ ] He iniciado conversación con @oxcl_bot
+- [ ] Puedo buscar un cliente por nombre
+- [ ] Puedo ver la línea de crédito de un cliente
+- [ ] Sé cómo buscar una ficha técnica
+- [ ] Puedo descargar un PDF de producto
+- [ ] Entiendo los rangos de morosidad
+- [ ] Sé generar reporte de facturas vencidas
+- [ ] Puedo usar la vista Estado General Cartera
+- [ ] Sé filtrar por mi RSM
+- [ ] Puedo descargar reportes Excel
+
+**Si has completado todos los ítems, ¡estás listo para usar el bot profesionalmente! 🎉**
+
+---
+
+<div align="center">
+
+**Bot de Gestión Comercial SSAB Chile**
+*Versión 2.0 - Noviembre 2025*
+
+---
+
+*Para más información, contacta a soporte.bot@ssab.cl*
+
+</div>

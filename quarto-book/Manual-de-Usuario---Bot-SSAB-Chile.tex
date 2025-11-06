@@ -1,0 +1,2294 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  11pt,
+  letterpaper,
+  oneside,
+  openany]{scrbook}
+\usepackage{xcolor}
+\usepackage[top=2.5cm,bottom=2.5cm,left=3cm,right=3cm,headsep=1cm,footskip=1.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{3}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[]{Helvetica Neue}
+  \setsansfont[]{Helvetica Neue}
+  \setmonofont[]{Menlo}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+
+
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{SSABBlue}{HTML}{002F6C}
+\definecolor{SSABRed}{HTML}{E2001A}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textcolor{SSABBlue}{Manual de Usuario - Bot SSAB Chile}}
+\fancyhead[R]{\small\textcolor{SSABBlue}{\nouppercase{\leftmark}}}
+\fancyfoot[C]{\small\textcolor{gray}{\thepage}}
+\fancyfoot[L]{\small\textcolor{gray}{© 2025 SSAB Chile}}
+\fancyfoot[R]{\small\textcolor{gray}{Luis Aguilera A.}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Manual de Usuario - Bot SSAB Chile},
+  pdfauthor={Luis Aguilera A.},
+  colorlinks=true,
+  linkcolor={SSABBlue},
+  filecolor={Maroon},
+  citecolor={SSABRed},
+  urlcolor={SSABBlue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Manual de Usuario - Bot SSAB Chile}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Sistema de Gestión Comercial}
+\author{Luis Aguilera A.}
+\date{6 de noviembre de 2025}
+\begin{document}
+\frontmatter
+\maketitle
+
+\renewcommand*\contentsname{Índice de Contenidos}
+{
+\hypersetup{linkcolor=SSABBlue}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+
+\mainmatter
+\bookmarksetup{startatroot}
+
+\chapter*{Bienvenido}\label{bienvenido}
+\addcontentsline{toc}{chapter}{Bienvenido}
+
+\markboth{Bienvenido}{Bienvenido}
+
+\begin{figure}[H]
+
+{\centering \includegraphics[width=0.6\linewidth,height=\textheight,keepaspectratio]{assets/01-buscar-bot.png}
+
+}
+
+\caption{Bot de Gestión Comercial SSAB Chile}
+
+\end{figure}%
+
+\section*{📱 Acerca de este manual}\label{acerca-de-este-manual}
+\addcontentsline{toc}{section}{📱 Acerca de este manual}
+
+\markright{📱 Acerca de este manual}
+
+Bienvenido al \textbf{Manual de Usuario del Bot de Gestión Comercial
+SSAB Chile} 🤖
+
+Este manual ha sido diseñado para ayudarte a aprovechar al máximo las
+capacidades del bot de Telegram \textbf{\citet{oxcl_bot}}, una
+herramienta integral para:
+
+\subsection*{📊 Gestión Inteligente}\label{gestiuxf3n-inteligente}
+\addcontentsline{toc}{subsection}{📊 Gestión Inteligente}
+
+\begin{itemize}
+\tightlist
+\item
+  Búsqueda avanzada de clientes
+\item
+  Filtros personalizables
+\item
+  Acceso instantáneo a información
+\end{itemize}
+
+\subsection*{📋 Fichas Técnicas}\label{fichas-tuxe9cnicas}
+\addcontentsline{toc}{subsection}{📋 Fichas Técnicas}
+
+\begin{itemize}
+\tightlist
+\item
+  Catálogo completo de productos SSAB
+\item
+  Especificaciones detalladas
+\item
+  Imágenes y diagramas
+\end{itemize}
+
+\subsection*{💰 Cuentas por Cobrar}\label{cuentas-por-cobrar}
+\addcontentsline{toc}{subsection}{💰 Cuentas por Cobrar}
+
+\begin{itemize}
+\tightlist
+\item
+  Estado de cuenta en tiempo real
+\item
+  Análisis de cartera
+\item
+  Reportes en Excel
+\end{itemize}
+
+\subsection*{ℹ️ Información
+Corporativa}\label{ux2139-informaciuxf3n-corporativa}
+\addcontentsline{toc}{subsection}{ℹ️ Información Corporativa}
+
+\begin{itemize}
+\tightlist
+\item
+  Datos de contacto SSAB
+\item
+  Información de productos
+\item
+  Recursos adicionales
+\end{itemize}
+
+\section*{👥 ¿Para quién es este
+manual?}\label{para-quiuxe9n-es-este-manual}
+\addcontentsline{toc}{section}{👥 ¿Para quién es este manual?}
+
+\markright{👥 ¿Para quién es este manual?}
+
+\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Audiencia Objetivo}, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6, breakable, toprule=.15mm, leftrule=.75mm, arc=.35mm, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, rightrule=.15mm, bottomtitle=1mm, colback=white, coltitle=black, toptitle=1mm, titlerule=0mm, bottomrule=.15mm]
+
+Este manual está dirigido a:
+
+\begin{itemize}
+\tightlist
+\item
+  ✅ \textbf{Equipo comercial} de SSAB Chile
+\item
+  ✅ \textbf{Representantes de ventas} en terreno
+\item
+  ✅ \textbf{Personal de atención} al cliente
+\item
+  ✅ \textbf{Usuarios autorizados} con acceso al bot
+\end{itemize}
+
+\end{tcolorbox}
+
+\section*{🗺️ Navegación}\label{navegaciuxf3n}
+\addcontentsline{toc}{section}{🗺️ Navegación}
+
+\markright{🗺️ Navegación}
+
+Utiliza el \textbf{menú lateral} para navegar entre los diferentes
+capítulos. Cada sección incluye:
+
+\begin{itemize}
+\tightlist
+\item
+  📸 \textbf{Instrucciones paso a paso} con capturas de pantalla reales
+\item
+  💡 \textbf{Ejemplos de uso práctico} para casos comunes
+\item
+  ⚡ \textbf{Consejos y mejores prácticas} del equipo
+\item
+  📊 \textbf{Casos de uso reales} documentados
+\end{itemize}
+
+\section*{📦 Formatos Disponibles}\label{formatos-disponibles}
+\addcontentsline{toc}{section}{📦 Formatos Disponibles}
+
+\markright{📦 Formatos Disponibles}
+
+Puedes acceder a este manual en diferentes formatos:
+
+\href{downloads/Manual_Completo_Bot_SSAB.pdf}{📄 Descargar PDF Completo}
+\href{index.html}{📱 Versión Web Interactiva}
+\href{downloads/Manual_Bot_SSAB.epub}{📖 Descargar EPUB}
+
+\section*{📋 Versión y
+Actualizaciones}\label{versiuxf3n-y-actualizaciones}
+\addcontentsline{toc}{section}{📋 Versión y Actualizaciones}
+
+\markright{📋 Versión y Actualizaciones}
+
+\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Información de Versión}, left=2mm, colframe=quarto-callout-note-color-frame, opacitybacktitle=0.6, breakable, toprule=.15mm, leftrule=.75mm, arc=.35mm, opacityback=0, colbacktitle=quarto-callout-note-color!10!white, rightrule=.15mm, bottomtitle=1mm, colback=white, coltitle=black, toptitle=1mm, titlerule=0mm, bottomrule=.15mm]
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Versión:} 2.0\\
+\item
+  \textbf{Fecha de publicación:} Noviembre 2025\\
+\item
+  \textbf{Bot:} \citet{oxcl_bot}\\
+\item
+  \textbf{Última actualización:} 6 de Noviembre de 2025
+\item
+  \textbf{Autor:} Luis Aguilera A.
+\end{itemize}
+
+\end{tcolorbox}
+
+\section*{📞 Soporte}\label{soporte}
+\addcontentsline{toc}{section}{📞 Soporte}
+
+\markright{📞 Soporte}
+
+Si necesitas ayuda adicional, contacta a:
+
+\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{👤 Contacto de Soporte}, left=2mm, colframe=quarto-callout-important-color-frame, opacitybacktitle=0.6, breakable, toprule=.15mm, leftrule=.75mm, arc=.35mm, opacityback=0, colbacktitle=quarto-callout-important-color!10!white, rightrule=.15mm, bottomtitle=1mm, colback=white, coltitle=black, toptitle=1mm, titlerule=0mm, bottomrule=.15mm]
+
+\textbf{Luis Aguilera A.}\\
+\emph{Administrador del Sistema}
+
+\begin{itemize}
+\tightlist
+\item
+  📧 Email:
+  \href{mailto:luis.aguilera@ssab.com}{\nolinkurl{luis.aguilera@ssab.com}}\\
+\item
+  📱 WhatsApp: \href{https://wa.me/56973881390}{+56 9 7388 1390}\\
+\item
+  🏢 Empresa: SSAB Chile
+\end{itemize}
+
+\end{tcolorbox}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{💡 Consejo Rápido para Empezar}, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6, breakable, toprule=.15mm, leftrule=.75mm, arc=.35mm, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, rightrule=.15mm, bottomtitle=1mm, colback=white, coltitle=black, toptitle=1mm, titlerule=0mm, bottomrule=.15mm]
+
+Usa la \textbf{barra de búsqueda} (🔍) en la parte superior para
+encontrar rápidamente cualquier tema en este manual. También puedes
+navegar por capítulos usando el menú lateral o las flechas de navegación
+en cada página.
+
+\textbf{¿Primera vez?} Te recomendamos empezar por el capítulo
+\href{inicio.qmd}{Inicio y Acceso} para configurar tu acceso al bot.
+
+\end{tcolorbox}
+
+\bookmarksetup{startatroot}
+
+\chapter{🎯 Introducción}\label{introducciuxf3n}
+
+El \textbf{Bot de Gestión Comercial SSAB Chile} es una herramienta
+desarrollada para facilitar el acceso instantáneo a información crítica
+del negocio directamente desde Telegram. Diseñado específicamente para
+el equipo comercial, permite consultar datos de clientes, fichas
+técnicas de productos, estados de cuenta y análisis de cartera en tiempo
+real.
+
+\subsection{✨ Beneficios Clave}\label{beneficios-clave}
+
+\begin{itemize}
+\tightlist
+\item
+  ⚡ \textbf{Acceso Instantáneo}: Información disponible 24/7 desde
+  cualquier dispositivo
+\item
+  📊 \textbf{Reportes Profesionales}: Generación automática de Excel con
+  datos actualizados
+\item
+  🎯 \textbf{Búsqueda Inteligente}: Encuentra clientes y productos
+  rápidamente
+\item
+  📈 \textbf{Análisis de Cartera}: Visualización completa del estado de
+  cuentas por cobrar
+\item
+  🔒 \textbf{Seguridad}: Acceso controlado solo para usuarios
+  autorizados
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\bookmarksetup{startatroot}
+
+\chapter{🔑 Requisitos Previos}\label{requisitos-previos}
+
+\subsection{Antes de Comenzar}\label{antes-de-comenzar}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Telegram Instalado}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Versión móvil (iOS/Android) o desktop
+  \item
+    Cuenta Telegram activa
+  \end{itemize}
+\item
+  \textbf{Acceso Autorizado}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Contactar al administrador del sistema
+  \item
+    Proporcionar tu usuario de Telegram (\citet{usuario})
+  \item
+    Esperar confirmación de acceso
+  \end{itemize}
+\item
+  \textbf{Conexión a Internet}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Necesaria para todas las operaciones
+  \item
+    Conexión estable recomendada para descargas
+  \end{itemize}
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\bookmarksetup{startatroot}
+
+\chapter{🚀 Inicio y Acceso}\label{inicio-y-acceso}
+
+\subsection{Paso 1: Buscar el Bot}\label{paso-1-buscar-el-bot}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Abrir Telegram y, en el buscador superior, escribir:
+  \texttt{@oxcl\_bot}
+\item
+  Seleccionar el bot de la lista de resultados.
+\end{enumerate}
+
+\begin{figure}[H]
+
+{\centering \pandocbounded{\includegraphics[keepaspectratio]{../assets/01-buscar-bot.png}}
+
+}
+
+\caption{Búsqueda del Bot}
+
+\end{figure}%
+
+\subsection{Paso 2: Iniciar
+Conversación}\label{paso-2-iniciar-conversaciuxf3n}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Presionar el botón \textbf{``Iniciar''} o \textbf{``Start''}. El bot
+  te enviará un mensaje de bienvenida.
+\item
+  Si no tienes acceso, recibirás instrucciones para solicitarlo.
+\end{enumerate}
+
+\begin{figure}[H]
+
+{\centering \pandocbounded{\includegraphics[keepaspectratio]{../assets/02-inicio-bot.png}}
+
+}
+
+\caption{Inicio del Bot}
+
+\end{figure}%
+
+\subsection{Paso 3: Verificación de
+Acceso}\label{paso-3-verificaciuxf3n-de-acceso}
+
+El bot verificará automáticamente si tu usuario está autorizado:
+
+\begin{itemize}
+\tightlist
+\item
+  ✅ \textbf{Acceso Concedido}: Verás el menú principal
+\item
+  ❌ \textbf{Acceso Denegado}: Contacta al administrador con tu
+  \citet{usuario}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\bookmarksetup{startatroot}
+
+\chapter{👥 Gestión de Clientes}\label{gestiuxf3n-de-clientes}
+
+\subsection{Búsqueda de Clientes}\label{buxfasqueda-de-clientes}
+
+\textbf{Acceso:} Menú Principal → 👥 Clientes
+
+\subsubsection{Opción 1: Búsqueda por
+Nombre}\label{opciuxf3n-1-buxfasqueda-por-nombre}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Presionar \textbf{``🔍 Buscar por Nombre''}
+\item
+  Escribir el nombre del cliente (mínimo 3 letras)
+\item
+  Seleccionar de la lista de resultados
+\end{enumerate}
+
+\textbf{Ejemplo:}
+
+\begin{verbatim}
+Usuario: "Tecno"
+Bot: Encontrados 3 clientes:
+     • Tecno Industrial S.A.
+     • Tecnomaq Ltda.
+     • Tecno Metales Chile
+\end{verbatim}
+
+\begin{figure}[H]
+
+{\centering \pandocbounded{\includegraphics[keepaspectratio]{../assets/04-busqueda-nombre.png}}
+
+}
+
+\caption{Búsqueda por Nombre}
+
+\end{figure}%
+
+\subsubsection{Opción 2: Búsqueda por
+Código}\label{opciuxf3n-2-buxfasqueda-por-cuxf3digo}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Presionar \textbf{``🔢 Buscar por Código''}
+\item
+  Ingresar el código SAP del cliente
+\item
+  Ver información detallada
+\end{enumerate}
+
+\textbf{Ejemplo:}
+
+\begin{verbatim}
+Usuario: "C123456"
+Bot: [Muestra ficha completa del cliente]
+\end{verbatim}
+
+\subsection{Información del Cliente}\label{informaciuxf3n-del-cliente}
+
+Al seleccionar un cliente, obtienes:
+
+\begin{verbatim}
+╔══════════════════════════════════╗
+║  INFORMACIÓN DEL CLIENTE         ║
+╠══════════════════════════════════╣
+║  📌 Nombre: Tecno Industrial S.A.║
+║  🔢 Código: C123456              ║
+║  👤 Ejecutivo: Juan Pérez        ║
+║  📞 Teléfono: +56 9 8765 4321    ║
+║  📧 Email: ventas@tecno.cl       ║
+║  💳 Línea Crédito: $50.000.000   ║
+║  📊 Usado: $32.500.000 (65%)     ║
+║  🎯 Disponible: $17.500.000      ║
+║  📅 Plazo Pago: 30 días          ║
+╚══════════════════════════════════╝
+\end{verbatim}
+
+\begin{figure}[H]
+
+{\centering \pandocbounded{\includegraphics[keepaspectratio]{../assets/05-ficha-cliente.png}}
+
+}
+
+\caption{Ficha Cliente}
+
+\end{figure}%
+
+\subsection{Acciones Disponibles}\label{acciones-disponibles}
+
+Desde la ficha del cliente puedes:
+
+\begin{itemize}
+\tightlist
+\item
+  📊 \textbf{Ver Estado de Cuenta}: Facturas pendientes y saldos
+\item
+  📥 \textbf{Descargar Excel}: Reporte detallado en Excel
+\item
+  📇 \textbf{Exportar Contacto}: Archivo vCard para tu agenda
+\item
+  🔙 \textbf{Volver}: Regresar al menú anterior
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\bookmarksetup{startatroot}
+
+\chapter{📋 Fichas Técnicas}\label{fichas-tuxe9cnicas-1}
+
+\subsection{Catálogo de Productos}\label{catuxe1logo-de-productos}
+
+\textbf{Acceso:} Menú Principal → 📋 Fichas Técnicas
+
+\subsubsection{Navegación por
+Categorías}\label{navegaciuxf3n-por-categoruxedas}
+
+El catálogo está organizado en 3 familias principales:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{💄 Labios} (Perfiles Labios)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Espesores disponibles
+  \item
+    Dimensiones estándar
+  \item
+    Aplicaciones
+  \end{itemize}
+\item
+  \textbf{🔲 Mainframe Liner}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Perfiles estructurales
+  \item
+    Especificaciones técnicas
+  \item
+    Cargas admisibles
+  \end{itemize}
+\item
+  \textbf{⚡ Ripper}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Aceros especiales
+  \item
+    Grados y resistencias
+  \item
+    Aplicaciones industriales
+  \end{itemize}
+\end{enumerate}
+
+\begin{figure}[H]
+
+{\centering \pandocbounded{\includegraphics[keepaspectratio]{../assets/06-catalogo.png}}
+
+}
+
+\caption{Catálogo Productos}
+
+\end{figure}%
+
+\subsection{Búsqueda de Productos}\label{buxfasqueda-de-productos}
+
+\subsubsection{Por Código/Nombre}\label{por-cuxf3digonombre}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Presionar \textbf{``🔍 Buscar Producto''}
+\item
+  Ingresar código o palabra clave
+\item
+  Ver resultados filtrados
+\end{enumerate}
+
+\textbf{Ejemplo:}
+
+\begin{verbatim}
+Usuario: "LP200"
+Bot: 📋 Labios LP200x4.5
+     Espesor: 4.5mm
+     Largo: 200mm
+     [Ver Ficha Completa]
+\end{verbatim}
+
+\subsection{Ficha Técnica Completa}\label{ficha-tuxe9cnica-completa}
+
+Al seleccionar un producto:
+
+\begin{verbatim}
+╔════════════════════════════════════╗
+║  FICHA TÉCNICA                     ║
+╠════════════════════════════════════╣
+║  📦 Producto: Labios LP200x4.5     ║
+║  🔢 Código: LP200-45               ║
+║  📏 Dimensiones:                   ║
+║     • Largo: 200 mm                ║
+║     • Espesor: 4.5 mm              ║
+║     • Ancho: 150 mm                ║
+║  ⚙️  Material: HARDOX 500          ║
+║  💪 Dureza: 500 HBW                ║
+║  📊 Peso: 12.5 kg/unidad           ║
+║  💵 Precio: $145.000 + IVA         ║
+║  📦 Stock: Disponible              ║
+║  🚚 Entrega: 3-5 días hábiles      ║
+╚════════════════════════════════════╝
+\end{verbatim}
+
+\begin{figure}[H]
+
+{\centering \pandocbounded{\includegraphics[keepaspectratio]{../assets/07-ficha-tecnica-01.png}}
+
+}
+
+\caption{Ficha Técnica Parte 1}
+
+\end{figure}%
+
+\begin{figure}[H]
+
+{\centering \pandocbounded{\includegraphics[keepaspectratio]{../assets/07-ficha-tecnica-02.png}}
+
+}
+
+\caption{Ficha Técnica Parte 2}
+
+\end{figure}%
+
+\subsection{Acciones Disponibles}\label{acciones-disponibles-1}
+
+\begin{itemize}
+\tightlist
+\item
+  📄 \textbf{Descargar PDF}: Ficha técnica completa en PDF
+\item
+  🖼️ \textbf{Ver Planos}: Dibujos técnicos y dimensiones
+\item
+  💰 \textbf{Cotizar}: Generar cotización para cliente
+\item
+  📧 \textbf{Compartir}: Enviar ficha por email
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\bookmarksetup{startatroot}
+
+\chapter{💰 Cuentas por Cobrar}\label{cuentas-por-cobrar-1}
+
+\subsection{Menú de Análisis}\label{menuxfa-de-anuxe1lisis}
+
+\textbf{Acceso:} Menú Principal → 💰 Cuentas x Cobrar
+
+Opciones disponibles:
+
+\begin{verbatim}
+┌──────────────────────────────────┐
+│  ANÁLISIS DE CARTERA             │
+├──────────────────────────────────┤
+│  1️⃣ Facturas Vencidas           │
+│  2️⃣ Facturas por Vencer          │
+│  3️⃣ Facturas No Vencidas         │
+│  4️⃣ Facturas por Cliente         │
+│  5️⃣ Top Clientes Morosos         │
+│  6️⃣ Estado General Cartera       │
+└──────────────────────────────────┘
+\end{verbatim}
+
+\begin{figure}[H]
+
+{\centering \pandocbounded{\includegraphics[keepaspectratio]{../assets/08-menu-cxc.png}}
+
+}
+
+\caption{Menú Cuentas por Cobrar}
+
+\end{figure}%
+
+\subsection{1️⃣ Facturas Vencidas}\label{facturas-vencidas}
+
+Visualiza todas las facturas con morosidad:
+
+\begin{verbatim}
+📉 FACTURAS VENCIDAS
+
+Total: $125.340.500
+Facturas: 87
+Clientes: 23
+
+┌─────────────┬──────────────┬─────────┐
+│ Rango       │ Monto        │ % Total │
+├─────────────┼──────────────┼─────────┤
+│ 1-30 días   │ $45.200.000  │  36%    │
+│ 31-60 días  │ $38.500.000  │  31%    │
+│ 61-90 días  │ $25.340.500  │  20%    │
+│ +90 días    │ $16.300.000  │  13%    │
+└─────────────┴──────────────┴─────────┘
+\end{verbatim}
+
+\textbf{Sub-opciones:}
+
+\begin{itemize}
+\tightlist
+\item
+  👥 \textbf{Ver por RSM}: Agrupar por ejecutivo de ventas
+\item
+  📊 \textbf{Ver Detalle}: Lista completa de facturas
+\item
+  📥 \textbf{Descargar Excel}: Reporte detallado
+\end{itemize}
+
+\begin{figure}[H]
+
+{\centering \pandocbounded{\includegraphics[keepaspectratio]{../assets/09-vencidas.png}}
+
+}
+
+\caption{Facturas Vencidas}
+
+\end{figure}%
+
+\subsection{2️⃣ Facturas por Vencer}\label{facturas-por-vencer}
+
+Facturas próximas a vencer (próximos 30 días):
+
+\begin{verbatim}
+📅 FACTURAS POR VENCER
+
+Total: $89.750.000
+Facturas: 156
+Clientes: 45
+
+┌─────────────┬──────────────┬─────────┐
+│ Vencimiento │ Monto        │ Factor. │
+├─────────────┼──────────────┼─────────┤
+│ 0-7 días    │ $32.100.000  │  42     │
+│ 8-15 días   │ $28.450.000  │  38     │
+│ 16-30 días  │ $29.200.000  │  76     │
+└─────────────┴──────────────┴─────────┘
+\end{verbatim}
+
+\begin{figure}[H]
+
+{\centering \pandocbounded{\includegraphics[keepaspectratio]{../assets/10-por-vencer.png}}
+
+}
+
+\caption{Facturas por Vencer}
+
+\end{figure}%
+
+\subsection{3️⃣ Facturas No Vencidas}\label{facturas-no-vencidas}
+
+Facturas al día (vencimiento \textgreater{} 30 días):
+
+\begin{verbatim}
+📗 FACTURAS NO VENCIDAS
+
+Total: $245.890.000
+Facturas: 312
+Clientes: 89
+
+Promedio días para vencer: 68 días
+\end{verbatim}
+
+\subsection{4️⃣ Facturas por Cliente}\label{facturas-por-cliente}
+
+Búsqueda individual del estado de cuenta:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Seleccionar \textbf{``Facturas por Cliente''}
+\item
+  Buscar el cliente
+\item
+  Ver estado de cuenta detallado
+\end{enumerate}
+
+\begin{verbatim}
+📊 ESTADO DE CUENTA
+Cliente: Tecno Industrial S.A.
+
+┌──────────┬────────────┬──────────────┬─────────┐
+│ N° Fact. │ Fecha Venc │ Monto        │ Estado  │
+├──────────┼────────────┼──────────────┼─────────┤
+│ F-001234 │ 2025-11-15 │ $2.500.000   │ Al día  │
+│ F-001189 │ 2025-11-08 │ $3.200.000   │ Al día  │
+│ F-001045 │ 2025-10-25 │ $1.800.000   │ Vencida │
+├──────────┼────────────┼──────────────┼─────────┤
+│ TOTAL    │            │ $7.500.000   │         │
+└──────────┴────────────┴──────────────┴─────────┘
+
+Vencido: $1.800.000 (11 días mora)
+Al día: $5.700.000
+\end{verbatim}
+
+\begin{quote}
+📸 \emph{Imagen disponible próximamente}
+\end{quote}
+
+\subsection{5️⃣ Top Clientes Morosos}\label{top-clientes-morosos}
+
+Ranking de clientes con mayor morosidad:
+
+\begin{verbatim}
+🔴 TOP 10 CLIENTES MOROSOS
+
+1. Cliente Alpha S.A.
+   Deuda: $12.500.000 | Mora: 45 días
+   
+2. Industrias Beta Ltda.
+   Deuda: $8.900.000 | Mora: 38 días
+   
+3. Comercial Gamma
+   Deuda: $7.200.000 | Mora: 62 días
+
+[... continúa hasta 10]
+\end{verbatim}
+
+\subsection{6️⃣ Estado General Cartera}\label{estado-general-cartera}
+
+\textbf{NUEVA FUNCIONALIDAD} - Vista panorámica completa:
+
+\begin{verbatim}
+📊 ESTADO GENERAL CARTERA
+
+Total Cartera: $461.980.500
+Facturas: 555
+Clientes: 157
+
+┌──────────────────┬──────────────┬────────┬──────┐
+│ Categoría        │ Monto        │ Fact.  │ %    │
+├──────────────────┼──────────────┼────────┼──────┤
+│ 📗 No Vencidas   │ $245.890.000 │  312   │ 53%  │
+│ 📙 0-30 días     │ $45.200.000  │   42   │ 10%  │
+│ 📒 31-60 días    │ $38.500.000  │   28   │  8%  │
+│ 📕 61-90 días    │ $25.340.500  │   12   │  5%  │
+│ 🔴 91-120 días   │ $12.450.000  │    8   │  3%  │
+│ ⚫ 121-365 días  │ $8.900.000   │    5   │  2%  │
+│ 💀 +365 días     │ $2.700.000   │    3   │  1%  │
+├──────────────────┼──────────────┼────────┼──────┤
+│ 💰 TOTAL         │ $461.980.500 │  555   │ 100% │
+└──────────────────┴──────────────┴────────┴──────┘
+\end{verbatim}
+
+\textbf{Acciones:}
+
+\begin{itemize}
+\tightlist
+\item
+  👥 \textbf{Ver por RSM}: Análisis agrupado por ejecutivo
+\item
+  📥 \textbf{Descargar Excel}: 5 hojas con detalle completo
+\end{itemize}
+
+\begin{quote}
+📸 \emph{Imagen disponible próximamente}
+\end{quote}
+
+\subsection{Vista por RSM (Ejecutivo de
+Ventas)}\label{vista-por-rsm-ejecutivo-de-ventas}
+
+Al seleccionar \textbf{``Ver por RSM''}:
+
+\begin{verbatim}
+📊 CARTERA POR RSM
+
+┌───────────────────┬──────────────┬────────┬─────────┐
+│ RSM               │ Total        │ Fact.  │ Client. │
+├───────────────────┼──────────────┼────────┼─────────┤
+│ Juan Pérez        │ $125.500.000 │  145   │   32    │
+│ María González    │ $98.750.000  │  128   │   28    │
+│ Carlos Ramírez    │ $87.230.500  │  106   │   24    │
+│ Ana Martínez      │ $75.900.000  │   89   │   19    │
+│ Pedro Silva       │ $74.600.000  │   87   │   22    │
+├───────────────────┼──────────────┼────────┼─────────┤
+│ 💰 TOTAL          │ $461.980.500 │  555   │  125    │
+└───────────────────┴──────────────┴────────┴─────────┘
+\end{verbatim}
+
+\textbf{Seleccionar RSM para:}
+
+\begin{itemize}
+\tightlist
+\item
+  📥 Descargar Excel personalizado con 5 hojas:
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    \textbf{Resumen}: Totales por categoría
+  \item
+    \textbf{Vencidas}: Facturas en mora
+  \item
+    \textbf{Por Vencer}: Próximas a vencer
+  \item
+    \textbf{No Vencidas}: Al día
+  \item
+    \textbf{Todas}: Detalle completo
+  \end{enumerate}
+\end{itemize}
+
+\begin{quote}
+📸 \emph{Imagen disponible próximamente}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{ℹ️ Información SSAB}\label{ux2139-informaciuxf3n-ssab}
+
+\subsection{Acceso Rápido a Datos
+Corporativos}\label{acceso-ruxe1pido-a-datos-corporativos}
+
+\textbf{Acceso:} Menú Principal → ℹ️ Info SSAB
+
+Información disponible:
+
+\begin{verbatim}
+┌─────────────────────────────────┐
+│  INFORMACIÓN SSAB CHILE         │
+├─────────────────────────────────┤
+│  📞 Contacto                    │
+│  📍 Dirección                   │
+│  🏢 Sucursales                  │
+│  📧 Emails Departamentos        │
+│  🕐 Horarios Atención           │
+│  🌐 Sitio Web                   │
+└─────────────────────────────────┘
+\end{verbatim}
+
+\subsection{Datos de Contacto}\label{datos-de-contacto}
+
+\begin{verbatim}
+📞 CONTACTO SSAB CHILE
+
+Casa Matriz:
+📍 Av. Apoquindo 4800, Piso 11
+   Las Condes, Santiago
+
+📞 Teléfono: +56 2 2950 3000
+📠 Fax: +56 2 2950 3099
+
+📧 Emails:
+   • Ventas: ventas@ssab.cl
+   • Soporte: soporte@ssab.cl
+   • Facturación: facturacion@ssab.cl
+
+🕐 Horario:
+   Lunes a Viernes: 08:30 - 18:00
+   Sábado: Cerrado
+   Domingo: Cerrado
+
+🌐 www.ssab.com/es-cl
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💼 Casos de Uso Prácticos}\label{casos-de-uso-pruxe1cticos}
+
+\subsection{Caso 1: Consulta Rápida de Cliente en
+Terreno}\label{caso-1-consulta-ruxe1pida-de-cliente-en-terreno}
+
+\textbf{Situación:} Estás visitando un cliente y necesitas verificar su
+línea de crédito disponible.
+
+\textbf{Pasos:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Abrir Telegram → \citet{oxcl_bot}
+\item
+  Menú Principal → 👥 Clientes
+\item
+  🔍 Buscar por Nombre → Ingresar nombre
+\item
+  Ver \textbf{Línea Crédito} y \textbf{Disponible}
+\end{enumerate}
+
+\textbf{Tiempo:} 15 segundos
+
+\begin{quote}
+📸 \emph{Imagen disponible próximamente}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Caso 2: Generar Reporte de Morosidad para
+Reunión}\label{caso-2-generar-reporte-de-morosidad-para-reuniuxf3n}
+
+\textbf{Situación:} Necesitas un reporte actualizado de clientes morosos
+para reunión gerencial.
+
+\textbf{Pasos:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Menú Principal → 💰 Cuentas x Cobrar
+\item
+  1️⃣ Facturas Vencidas
+\item
+  👥 Ver por RSM
+\item
+  Seleccionar tu nombre
+\item
+  📥 Descargar Excel
+\end{enumerate}
+
+\textbf{Tiempo:} 30 segundos \textbf{Resultado:} Excel con 5 hojas
+detalladas
+
+\begin{quote}
+📸 \emph{Imagen disponible próximamente}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Caso 3: Enviar Ficha Técnica a
+Cliente}\label{caso-3-enviar-ficha-tuxe9cnica-a-cliente}
+
+\textbf{Situación:} Cliente solicita información técnica de un producto.
+
+\textbf{Pasos:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Menú Principal → 📋 Fichas Técnicas
+\item
+  🔍 Buscar Producto → Ingresar código
+\item
+  Ver Ficha Completa
+\item
+  📄 Descargar PDF
+\item
+  Compartir PDF con cliente vía WhatsApp/Email
+\end{enumerate}
+
+\textbf{Tiempo:} 20 segundos
+
+\begin{quote}
+📸 \emph{Imagen disponible próximamente}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Caso 4: Verificar Estado de Cuenta
+Específico}\label{caso-4-verificar-estado-de-cuenta-especuxedfico}
+
+\textbf{Situación:} Cliente consulta sus facturas pendientes.
+
+\textbf{Pasos:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Menú Principal → 💰 Cuentas x Cobrar
+\item
+  4️⃣ Facturas por Cliente
+\item
+  Buscar cliente
+\item
+  Ver estado completo
+\item
+  📥 Descargar Excel si necesita
+\item
+  📧 Enviar al cliente
+\end{enumerate}
+
+\textbf{Tiempo:} 25 segundos
+
+\begin{quote}
+📸 \emph{Imagen disponible próximamente}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Caso 5: Análisis Panorámico de
+Cartera}\label{caso-5-anuxe1lisis-panoruxe1mico-de-cartera}
+
+\textbf{Situación:} Necesitas visión general del estado de toda la
+cartera.
+
+\textbf{Pasos:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Menú Principal → 💰 Cuentas x Cobrar
+\item
+  6️⃣ Estado General Cartera
+\item
+  Revisar distribución por rangos
+\item
+  👥 Ver por RSM para análisis por vendedor
+\item
+  📥 Descargar Excel consolidado
+\end{enumerate}
+
+\textbf{Tiempo:} 20 segundos \textbf{Resultado:} Vista completa de
+\$461M+ en cartera
+
+\begin{quote}
+📸 \emph{Imagen disponible próximamente}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{❓ Preguntas Frecuentes}\label{preguntas-frecuentes}
+
+\subsection{Acceso y Seguridad}\label{acceso-y-seguridad}
+
+\textbf{P: ¿Cómo obtengo acceso al bot?} R: Contacta al administrador
+del sistema con tu usuario de Telegram (\citet{usuario}). El acceso se
+otorga según tu rol en la empresa.
+
+\textbf{P: ¿Es seguro usar el bot?} R: Sí. El bot tiene control de
+acceso por usuario, todas las comunicaciones van cifradas por Telegram,
+y no almacena información sensible localmente.
+
+\textbf{P: ¿Puedo usar el bot desde mi celular personal?} R: Sí, siempre
+que tu usuario de Telegram esté autorizado.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Datos e Información}\label{datos-e-informaciuxf3n}
+
+\textbf{P: ¿Qué tan actualizados están los datos?} R: Los datos se
+actualizan diariamente desde el sistema SAP. La información de cartera
+refleja el cierre del día anterior.
+
+\textbf{P: ¿Los precios en las fichas técnicas incluyen IVA?} R: No,
+todos los precios mostrados son netos (sin IVA).
+
+\textbf{P: ¿Puedo ver facturas pagadas?} R: Actualmente el bot solo
+muestra facturas pendientes (por cobrar).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Reportes y Exportaciones}\label{reportes-y-exportaciones}
+
+\textbf{P: ¿En qué formato se descargan los reportes?} R: Excel (.xlsx)
+para reportes de datos, PDF para fichas técnicas, y vCard (.vcf) para
+contactos.
+
+\textbf{P: ¿Cuánto tiempo permanecen los archivos disponibles?} R: Los
+archivos generados están disponibles por 24 horas. Después debes volver
+a generarlos.
+
+\textbf{P: ¿Puedo personalizar los reportes?} R: Actualmente los
+reportes tienen formatos predefinidos. Para reportes personalizados,
+contacta al administrador.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Funcionalidades}\label{funcionalidades}
+
+\textbf{P: ¿Puedo registrar pagos desde el bot?} R: No, el bot es solo
+de consulta. Los pagos deben registrarse en SAP.
+
+\textbf{P: ¿El bot envía notificaciones automáticas?} R: Actualmente no.
+Debes ingresar al bot para consultar información.
+
+\textbf{P: ¿Puedo solicitar que se agreguen nuevas funcionalidades?} R:
+Sí, envía tus sugerencias al administrador del sistema.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Problemas Técnicos}\label{problemas-tuxe9cnicos}
+
+\textbf{P: El bot no responde, ¿qué hago?}R:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Verifica tu conexión a internet
+\item
+  Cierra y abre Telegram
+\item
+  Intenta comando /start
+\item
+  Si persiste, contacta soporte
+\end{enumerate}
+
+\textbf{P: ¿Qué hago si un reporte no se genera?}R: Puede deberse a alto
+volumen de datos. Intenta:
+
+\begin{itemize}
+\tightlist
+\item
+  Filtrar por rango más pequeño
+\item
+  Usar la opción por RSM individual
+\item
+  Intentar en horario de menor demanda
+\end{itemize}
+
+\textbf{P: Los datos no coinciden con SAP, ¿por qué?}R: Si hay
+discrepancia, puede deberse a:
+
+\begin{itemize}
+\tightlist
+\item
+  Actualización en proceso (espera 30 min)
+\item
+  Cambios muy recientes en SAP
+\item
+  Contacta al administrador si persiste
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📞 Soporte y Contacto}\label{soporte-y-contacto}
+
+\subsection{Canales de Soporte}\label{canales-de-soporte}
+
+\subsubsection{Administrador del Sistema / Soporte
+Técnico}\label{administrador-del-sistema-soporte-tuxe9cnico}
+
+\begin{itemize}
+\tightlist
+\item
+  👤 Nombre: Luis Aguilera
+\item
+  📧 Email: luis.aguilera@ssab.com
+\item
+  📞 WhatsApp: https://wa.me/56973881390
+\end{itemize}
+
+\subsubsection{Capacitaciones}\label{capacitaciones}
+
+Para solicitar capacitación del bot para tu equipo:
+
+\begin{itemize}
+\tightlist
+\item
+  📧 capacitacion@ssab.cl
+\item
+  📅 Sesiones grupales cada primer jueves del mes
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📚 Recursos Adicionales}\label{recursos-adicionales}
+
+\subsection{Documentación Técnica}\label{documentaciuxf3n-tuxe9cnica}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{../admin/ADMIN_GUIDE.md}{Manual de Administración}
+\item
+  \href{../dev/DEVELOPER_GUIDE.md}{Guía de Desarrollo}
+\item
+  \href{../api/API_DOCS.md}{API Reference}
+\end{itemize}
+
+\subsection{Videos Tutoriales}\label{videos-tutoriales}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://youtube.com/ssab-bot-intro}{YouTube: Introducción al
+  Bot}
+\item
+  \href{https://youtube.com/ssab-bot-cartera}{YouTube: Reportes de
+  Cartera}
+\item
+  \href{https://youtube.com/ssab-bot-fichas}{YouTube: Fichas Técnicas}
+\end{itemize}
+
+\subsection{Actualizaciones}\label{actualizaciones}
+
+Suscríbete al canal de novedades:
+
+\begin{itemize}
+\tightlist
+\item
+  📢 Telegram: \citet{ssab_bot_updates}
+\item
+  📧 Newsletter mensual
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📝 Notas Importantes}\label{notas-importantes}
+
+\subsection{Privacidad y
+Confidencialidad}\label{privacidad-y-confidencialidad}
+
+⚠️ \textbf{IMPORTANTE:}
+
+\begin{itemize}
+\tightlist
+\item
+  La información del bot es confidencial y de uso exclusivo SSAB Chile
+\item
+  No compartir credenciales de acceso
+\item
+  No distribuir reportes fuera de la organización
+\item
+  Usar solo para fines laborales
+\end{itemize}
+
+\subsection{Mejores Prácticas}\label{mejores-pruxe1cticas}
+
+✅ \textbf{Recomendaciones:}
+
+\begin{itemize}
+\tightlist
+\item
+  Verificar datos críticos contra SAP antes de decisiones importantes
+\item
+  Descargar reportes cuando necesites conservar histórico
+\item
+  Reportar inconsistencias al administrador
+\item
+  Sugerir mejoras basadas en tu experiencia de uso
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📄 Historial de Versiones}\label{historial-de-versiones}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.0842}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.0842}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.8316}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Versión
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Fecha
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Cambios Principales
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+2.0 & Nov 2025 & • Estado General Cartera
+\texttt{\textless{}br\textgreater{}}• Vista por RSM
+\texttt{\textless{}br\textgreater{}}• Excel con 5 hojas \\
+1.5 & Oct 2025 & • Top Clientes Morosos
+\texttt{\textless{}br\textgreater{}}• Mejoras UI \\
+1.0 & Sep 2025 & • Lanzamiento inicial
+\texttt{\textless{}br\textgreater{}}• Funciones básicas \\
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{✅ Checklist de Inicio
+Rápido}\label{checklist-de-inicio-ruxe1pido}
+
+Usa esta lista para verificar que dominas las funciones esenciales:
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  He iniciado conversación con \citet{oxcl_bot}
+\item[$\square$]
+  Puedo buscar un cliente por nombre
+\item[$\square$]
+  Puedo ver la línea de crédito de un cliente
+\item[$\square$]
+  Sé cómo buscar una ficha técnica
+\item[$\square$]
+  Puedo descargar un PDF de producto
+\item[$\square$]
+  Entiendo los rangos de morosidad
+\item[$\square$]
+  Sé generar reporte de facturas vencidas
+\item[$\square$]
+  Puedo usar la vista Estado General Cartera
+\item[$\square$]
+  Sé filtrar por mi RSM
+\item[$\square$]
+  Puedo descargar reportes Excel
+\end{itemize}
+
+\textbf{Si has completado todos los ítems, ¡estás listo para usar el bot
+profesionalmente! 🎉}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Bot de Gestión Comercial SSAB Chile} \emph{Versión 2.0 -
+Noviembre 2025}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\emph{Para más información, contacta a soporte.bot@ssab.cl}
+
+\bookmarksetup{startatroot}
+
+\chapter{ℹ️ Información SSAB}\label{ux2139-informaciuxf3n-ssab-1}
+
+\subsection{Acceso Rápido a Datos
+Corporativos}\label{acceso-ruxe1pido-a-datos-corporativos-1}
+
+\textbf{Acceso:} Menú Principal → ℹ️ Info SSAB
+
+Información disponible:
+
+\begin{verbatim}
+┌─────────────────────────────────┐
+│  INFORMACIÓN SSAB CHILE         │
+├─────────────────────────────────┤
+│  📞 Contacto                    │
+│  📍 Dirección                   │
+│  🏢 Sucursales                  │
+│  📧 Emails Departamentos        │
+│  🕐 Horarios Atención           │
+│  🌐 Sitio Web                   │
+└─────────────────────────────────┘
+\end{verbatim}
+
+\subsection{Datos de Contacto}\label{datos-de-contacto-1}
+
+\begin{verbatim}
+📞 CONTACTO SSAB CHILE
+
+Casa Matriz:
+📍 Av. Apoquindo 4800, Piso 11
+   Las Condes, Santiago
+
+📞 Teléfono: +56 2 2950 3000
+📠 Fax: +56 2 2950 3099
+
+📧 Emails:
+   • Ventas: ventas@ssab.cl
+   • Soporte: soporte@ssab.cl
+   • Facturación: facturacion@ssab.cl
+
+🕐 Horario:
+   Lunes a Viernes: 08:30 - 18:00
+   Sábado: Cerrado
+   Domingo: Cerrado
+
+🌐 www.ssab.com/es-cl
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\bookmarksetup{startatroot}
+
+\chapter{💼 Casos de Uso Prácticos}\label{casos-de-uso-pruxe1cticos-1}
+
+\subsection{Caso 1: Consulta Rápida de Cliente en
+Terreno}\label{caso-1-consulta-ruxe1pida-de-cliente-en-terreno-1}
+
+\textbf{Situación:} Estás visitando un cliente y necesitas verificar su
+línea de crédito disponible.
+
+\textbf{Pasos:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Abrir Telegram → \citet{oxcl_bot}
+\item
+  Menú Principal → 👥 Clientes
+\item
+  🔍 Buscar por Nombre → Ingresar nombre
+\item
+  Ver \textbf{Línea Crédito} y \textbf{Disponible}
+\end{enumerate}
+
+\textbf{Tiempo:} 15 segundos
+
+\begin{quote}
+📸 \emph{Imagen disponible próximamente}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Caso 2: Generar Reporte de Morosidad para
+Reunión}\label{caso-2-generar-reporte-de-morosidad-para-reuniuxf3n-1}
+
+\textbf{Situación:} Necesitas un reporte actualizado de clientes morosos
+para reunión gerencial.
+
+\textbf{Pasos:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Menú Principal → 💰 Cuentas x Cobrar
+\item
+  1️⃣ Facturas Vencidas
+\item
+  👥 Ver por RSM
+\item
+  Seleccionar tu nombre
+\item
+  📥 Descargar Excel
+\end{enumerate}
+
+\textbf{Tiempo:} 30 segundos \textbf{Resultado:} Excel con 5 hojas
+detalladas
+
+\begin{quote}
+📸 \emph{Imagen disponible próximamente}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Caso 3: Enviar Ficha Técnica a
+Cliente}\label{caso-3-enviar-ficha-tuxe9cnica-a-cliente-1}
+
+\textbf{Situación:} Cliente solicita información técnica de un producto.
+
+\textbf{Pasos:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Menú Principal → 📋 Fichas Técnicas
+\item
+  🔍 Buscar Producto → Ingresar código
+\item
+  Ver Ficha Completa
+\item
+  📄 Descargar PDF
+\item
+  Compartir PDF con cliente vía WhatsApp/Email
+\end{enumerate}
+
+\textbf{Tiempo:} 20 segundos
+
+\begin{quote}
+📸 \emph{Imagen disponible próximamente}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Caso 4: Verificar Estado de Cuenta
+Específico}\label{caso-4-verificar-estado-de-cuenta-especuxedfico-1}
+
+\textbf{Situación:} Cliente consulta sus facturas pendientes.
+
+\textbf{Pasos:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Menú Principal → 💰 Cuentas x Cobrar
+\item
+  4️⃣ Facturas por Cliente
+\item
+  Buscar cliente
+\item
+  Ver estado completo
+\item
+  📥 Descargar Excel si necesita
+\item
+  📧 Enviar al cliente
+\end{enumerate}
+
+\textbf{Tiempo:} 25 segundos
+
+\begin{quote}
+📸 \emph{Imagen disponible próximamente}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Caso 5: Análisis Panorámico de
+Cartera}\label{caso-5-anuxe1lisis-panoruxe1mico-de-cartera-1}
+
+\textbf{Situación:} Necesitas visión general del estado de toda la
+cartera.
+
+\textbf{Pasos:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Menú Principal → 💰 Cuentas x Cobrar
+\item
+  6️⃣ Estado General Cartera
+\item
+  Revisar distribución por rangos
+\item
+  👥 Ver por RSM para análisis por vendedor
+\item
+  📥 Descargar Excel consolidado
+\end{enumerate}
+
+\textbf{Tiempo:} 20 segundos \textbf{Resultado:} Vista completa de
+\$461M+ en cartera
+
+\begin{quote}
+📸 \emph{Imagen disponible próximamente}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\bookmarksetup{startatroot}
+
+\chapter{❓ Preguntas Frecuentes}\label{preguntas-frecuentes-1}
+
+\subsection{Acceso y Seguridad}\label{acceso-y-seguridad-1}
+
+\textbf{P: ¿Cómo obtengo acceso al bot?} R: Contacta al administrador
+del sistema con tu usuario de Telegram (\citet{usuario}). El acceso se
+otorga según tu rol en la empresa.
+
+\textbf{P: ¿Es seguro usar el bot?} R: Sí. El bot tiene control de
+acceso por usuario, todas las comunicaciones van cifradas por Telegram,
+y no almacena información sensible localmente.
+
+\textbf{P: ¿Puedo usar el bot desde mi celular personal?} R: Sí, siempre
+que tu usuario de Telegram esté autorizado.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Datos e Información}\label{datos-e-informaciuxf3n-1}
+
+\textbf{P: ¿Qué tan actualizados están los datos?} R: Los datos se
+actualizan diariamente desde el sistema SAP. La información de cartera
+refleja el cierre del día anterior.
+
+\textbf{P: ¿Los precios en las fichas técnicas incluyen IVA?} R: No,
+todos los precios mostrados son netos (sin IVA).
+
+\textbf{P: ¿Puedo ver facturas pagadas?} R: Actualmente el bot solo
+muestra facturas pendientes (por cobrar).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Reportes y Exportaciones}\label{reportes-y-exportaciones-1}
+
+\textbf{P: ¿En qué formato se descargan los reportes?} R: Excel (.xlsx)
+para reportes de datos, PDF para fichas técnicas, y vCard (.vcf) para
+contactos.
+
+\textbf{P: ¿Cuánto tiempo permanecen los archivos disponibles?} R: Los
+archivos generados están disponibles por 24 horas. Después debes volver
+a generarlos.
+
+\textbf{P: ¿Puedo personalizar los reportes?} R: Actualmente los
+reportes tienen formatos predefinidos. Para reportes personalizados,
+contacta al administrador.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Funcionalidades}\label{funcionalidades-1}
+
+\textbf{P: ¿Puedo registrar pagos desde el bot?} R: No, el bot es solo
+de consulta. Los pagos deben registrarse en SAP.
+
+\textbf{P: ¿El bot envía notificaciones automáticas?} R: Actualmente no.
+Debes ingresar al bot para consultar información.
+
+\textbf{P: ¿Puedo solicitar que se agreguen nuevas funcionalidades?} R:
+Sí, envía tus sugerencias al administrador del sistema.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Problemas Técnicos}\label{problemas-tuxe9cnicos-1}
+
+\textbf{P: El bot no responde, ¿qué hago?}R:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Verifica tu conexión a internet
+\item
+  Cierra y abre Telegram
+\item
+  Intenta comando /start
+\item
+  Si persiste, contacta soporte
+\end{enumerate}
+
+\textbf{P: ¿Qué hago si un reporte no se genera?}R: Puede deberse a alto
+volumen de datos. Intenta:
+
+\begin{itemize}
+\tightlist
+\item
+  Filtrar por rango más pequeño
+\item
+  Usar la opción por RSM individual
+\item
+  Intentar en horario de menor demanda
+\end{itemize}
+
+\textbf{P: Los datos no coinciden con SAP, ¿por qué?}R: Si hay
+discrepancia, puede deberse a:
+
+\begin{itemize}
+\tightlist
+\item
+  Actualización en proceso (espera 30 min)
+\item
+  Cambios muy recientes en SAP
+\item
+  Contacta al administrador si persiste
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📞 Soporte y Contacto}\label{soporte-y-contacto-1}
+
+\subsection{Canales de Soporte}\label{canales-de-soporte-1}
+
+\subsubsection{Administrador del Sistema / Soporte
+Técnico}\label{administrador-del-sistema-soporte-tuxe9cnico-1}
+
+\begin{itemize}
+\tightlist
+\item
+  👤 Nombre: Luis Aguilera
+\item
+  📧 Email: luis.aguilera@ssab.com
+\item
+  📞 WhatsApp: https://wa.me/56973881390
+\end{itemize}
+
+\subsubsection{Capacitaciones}\label{capacitaciones-1}
+
+Para solicitar capacitación del bot para tu equipo:
+
+\begin{itemize}
+\tightlist
+\item
+  📧 capacitacion@ssab.cl
+\item
+  📅 Sesiones grupales cada primer jueves del mes
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📚 Recursos Adicionales}\label{recursos-adicionales-1}
+
+\subsection{Documentación Técnica}\label{documentaciuxf3n-tuxe9cnica-1}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{../admin/ADMIN_GUIDE.md}{Manual de Administración}
+\item
+  \href{../dev/DEVELOPER_GUIDE.md}{Guía de Desarrollo}
+\item
+  \href{../api/API_DOCS.md}{API Reference}
+\end{itemize}
+
+\subsection{Videos Tutoriales}\label{videos-tutoriales-1}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://youtube.com/ssab-bot-intro}{YouTube: Introducción al
+  Bot}
+\item
+  \href{https://youtube.com/ssab-bot-cartera}{YouTube: Reportes de
+  Cartera}
+\item
+  \href{https://youtube.com/ssab-bot-fichas}{YouTube: Fichas Técnicas}
+\end{itemize}
+
+\subsection{Actualizaciones}\label{actualizaciones-1}
+
+Suscríbete al canal de novedades:
+
+\begin{itemize}
+\tightlist
+\item
+  📢 Telegram: \citet{ssab_bot_updates}
+\item
+  📧 Newsletter mensual
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📝 Notas Importantes}\label{notas-importantes-1}
+
+\subsection{Privacidad y
+Confidencialidad}\label{privacidad-y-confidencialidad-1}
+
+⚠️ \textbf{IMPORTANTE:}
+
+\begin{itemize}
+\tightlist
+\item
+  La información del bot es confidencial y de uso exclusivo SSAB Chile
+\item
+  No compartir credenciales de acceso
+\item
+  No distribuir reportes fuera de la organización
+\item
+  Usar solo para fines laborales
+\end{itemize}
+
+\subsection{Mejores Prácticas}\label{mejores-pruxe1cticas-1}
+
+✅ \textbf{Recomendaciones:}
+
+\begin{itemize}
+\tightlist
+\item
+  Verificar datos críticos contra SAP antes de decisiones importantes
+\item
+  Descargar reportes cuando necesites conservar histórico
+\item
+  Reportar inconsistencias al administrador
+\item
+  Sugerir mejoras basadas en tu experiencia de uso
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📄 Historial de Versiones}\label{historial-de-versiones-1}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.0842}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.0842}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.8316}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Versión
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Fecha
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Cambios Principales
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+2.0 & Nov 2025 & • Estado General Cartera
+\texttt{\textless{}br\textgreater{}}• Vista por RSM
+\texttt{\textless{}br\textgreater{}}• Excel con 5 hojas \\
+1.5 & Oct 2025 & • Top Clientes Morosos
+\texttt{\textless{}br\textgreater{}}• Mejoras UI \\
+1.0 & Sep 2025 & • Lanzamiento inicial
+\texttt{\textless{}br\textgreater{}}• Funciones básicas \\
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{✅ Checklist de Inicio
+Rápido}\label{checklist-de-inicio-ruxe1pido-1}
+
+Usa esta lista para verificar que dominas las funciones esenciales:
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  He iniciado conversación con \citet{oxcl_bot}
+\item[$\square$]
+  Puedo buscar un cliente por nombre
+\item[$\square$]
+  Puedo ver la línea de crédito de un cliente
+\item[$\square$]
+  Sé cómo buscar una ficha técnica
+\item[$\square$]
+  Puedo descargar un PDF de producto
+\item[$\square$]
+  Entiendo los rangos de morosidad
+\item[$\square$]
+  Sé generar reporte de facturas vencidas
+\item[$\square$]
+  Puedo usar la vista Estado General Cartera
+\item[$\square$]
+  Sé filtrar por mi RSM
+\item[$\square$]
+  Puedo descargar reportes Excel
+\end{itemize}
+
+\textbf{Si has completado todos los ítems, ¡estás listo para usar el bot
+profesionalmente! 🎉}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Bot de Gestión Comercial SSAB Chile} \emph{Versión 2.0 -
+Noviembre 2025}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\emph{Para más información, contacta a soporte.bot@ssab.cl}
+
+\bookmarksetup{startatroot}
+
+\chapter{📚 Guía de Descarga y
+Formatos}\label{guuxeda-de-descarga-y-formatos}
+
+El Manual de Usuario del Bot SSAB Chile está disponible en múltiples
+formatos para tu conveniencia.
+
+\section{📄 Formatos Disponibles}\label{formatos-disponibles-1}
+
+\subsection{🌐 Versión Web
+(Recomendada)}\label{versiuxf3n-web-recomendada}
+
+La versión web ofrece la mejor experiencia con:
+
+\begin{itemize}
+\tightlist
+\item
+  ✅ Navegación interactiva entre capítulos
+\item
+  ✅ Búsqueda instantánea en todo el contenido
+\item
+  ✅ Modo claro y oscuro
+\item
+  ✅ Responsive (funciona en móvil, tablet y desktop)
+\item
+  ✅ Siempre actualizado
+\end{itemize}
+
+\textbf{Acceso:} Estás leyéndola ahora mismo en
+\url{https://laguileracl.github.io/manual-bot-ssab/}
+
+\subsection{📕 PDF Completo}\label{pdf-completo}
+
+Descarga el manual completo en formato PDF para:
+
+\begin{itemize}
+\tightlist
+\item
+  📄 Lectura offline
+\item
+  🖨️ Impresión del manual
+\item
+  📧 Compartir por email
+\item
+  💾 Archivar localmente
+\end{itemize}
+
+\href{Manual-de-Usuario---Bot-SSAB-Chile.pdf}{📥 Descargar PDF Completo}
+
+\textbf{Características del PDF:} - Tamaño: \textasciitilde8-12 MB
+(incluye todas las imágenes) - Formato: PDF/A (archivado a largo plazo)
+- Páginas numeradas con encabezados - Tabla de contenidos clickeable -
+Enlaces internos funcionales - Optimizado para impresión
+
+\subsection{📱 EPUB (Libro
+Electrónico)}\label{epub-libro-electruxf3nico}
+
+Para dispositivos móviles y lectores de ebooks:
+
+\href{Manual-Bot-SSAB-Chile.epub}{📥 Descargar EPUB}
+
+\textbf{Compatible con:} - 📱 Apple Books (iPhone/iPad) - 📚 Google Play
+Books (Android) - 🔖 Kindle (convertir con Calibre) - 💻 Adobe Digital
+Editions - 🖥️ Calibre (PC/Mac/Linux)
+
+\section{💾 Cómo Usar Cada Formato}\label{cuxf3mo-usar-cada-formato}
+
+\subsection{Para lectura en pantalla}\label{para-lectura-en-pantalla}
+
+→ \textbf{Usa la versión web} (esta página)
+
+\subsection{Para imprimir}\label{para-imprimir}
+
+→ \textbf{Descarga el PDF} y imprime las secciones que necesites
+
+\subsection{Para leer en el móvil}\label{para-leer-en-el-muxf3vil}
+
+→ \textbf{Descarga el EPUB} y ábrelo en Apple Books o Google Play Books
+
+\subsection{Para compartir con el
+equipo}\label{para-compartir-con-el-equipo}
+
+→ \textbf{Envía el link web} o el PDF según prefieras
+
+\section{🔄 Actualizaciones}\label{actualizaciones-2}
+
+\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Mantente Actualizado}, left=2mm, colframe=quarto-callout-note-color-frame, opacitybacktitle=0.6, breakable, toprule=.15mm, leftrule=.75mm, arc=.35mm, opacityback=0, colbacktitle=quarto-callout-note-color!10!white, rightrule=.15mm, bottomtitle=1mm, colback=white, coltitle=black, toptitle=1mm, titlerule=0mm, bottomrule=.15mm]
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Versión Web:} Se actualiza automáticamente
+\item
+  \textbf{PDF/EPUB:} Revisa esta página periódicamente para descargar la
+  última versión
+\item
+  \textbf{Versión actual:} 2.0 (Noviembre 2025)
+\end{itemize}
+
+\end{tcolorbox}
+
+\section{📞 ¿Necesitas otro formato?}\label{necesitas-otro-formato}
+
+Si necesitas el manual en otro formato (Word, Markdown, HTML standalone,
+etc.), contacta a:
+
+\textbf{Luis Aguilera A.}\\
+📧
+\href{mailto:luis.aguilera@ssab.com}{\nolinkurl{luis.aguilera@ssab.com}}\\
+📱 \href{https://wa.me/56973881390}{WhatsApp}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hyperref[bienvenido]{← Volver al inicio}
+
+\bookmarksetup{startatroot}
+
+\chapter*{Referencias}\label{referencias}
+\addcontentsline{toc}{chapter}{Referencias}
+
+\markboth{Referencias}{Referencias}
+
+\section*{Soporte y Contacto}\label{soporte-y-contacto-2}
+\addcontentsline{toc}{section}{Soporte y Contacto}
+
+\markright{Soporte y Contacto}
+
+Si necesitas ayuda adicional o tienes preguntas sobre el uso del bot:
+
+\textbf{Luis Aguilera}\\
+Administrador del Sistema
+
+\begin{itemize}
+\tightlist
+\item
+  📧 Email:
+  \href{mailto:luis.aguilera@ssab.com}{\nolinkurl{luis.aguilera@ssab.com}}
+\item
+  📱 WhatsApp: \href{https://wa.me/56973881390}{+56 9 7388 1390}
+\item
+  🏢 Empresa: SSAB Chile
+\end{itemize}
+
+\section*{Enlaces Útiles}\label{enlaces-uxfatiles}
+\addcontentsline{toc}{section}{Enlaces Útiles}
+
+\markright{Enlaces Útiles}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://www.ssab.com}{SSAB Global}
+\item
+  \href{https://www.ssab.com/es-cl}{SSAB América Latina}
+\item
+  \href{https://www.ssab.com/es-cl/productos}{Productos SSAB}
+\end{itemize}
+
+\section*{Sobre SSAB}\label{sobre-ssab}
+\addcontentsline{toc}{section}{Sobre SSAB}
+
+\markright{Sobre SSAB}
+
+SSAB es un fabricante global líder de acero de alta resistencia,
+especializado en:
+
+\begin{itemize}
+\tightlist
+\item
+  Acero ultra-alta resistencia (UHSS)
+\item
+  Acero resistente al desgaste (Hardox)
+\item
+  Acero estructural (Strenx)
+\item
+  Soluciones sostenibles de acero
+\end{itemize}
+
+\section*{Historial de Versiones}\label{historial-de-versiones-2}
+\addcontentsline{toc}{section}{Historial de Versiones}
+
+\markright{Historial de Versiones}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Versión & Fecha & Cambios \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+2.0 & Nov 2025 & Manual completo en formato Quarto \\
+1.0 & Nov 2025 & Primera versión del manual \\
+\end{longtable}
+
+\section*{Agradecimientos}\label{agradecimientos}
+\addcontentsline{toc}{section}{Agradecimientos}
+
+\markright{Agradecimientos}
+
+Este manual fue desarrollado para facilitar el uso del Bot de Gestión
+Comercial SSAB Chile y mejorar la eficiencia del equipo comercial.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\emph{Documento generado con \href{https://quarto.org}{Quarto}}
+
+
+\backmatter
+\bibliography{references.bib}
+
+
+
+\end{document}

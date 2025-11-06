@@ -1,0 +1,47 @@
+# ℹ️ Información SSAB
+
+### Acceso Rápido a Datos Corporativos
+
+**Acceso:** Menú Principal → ℹ️ Info SSAB
+
+Información disponible:
+
+```
+┌─────────────────────────────────┐
+│  INFORMACIÓN SSAB CHILE         │
+├─────────────────────────────────┤
+│  📞 Contacto                    │
+│  📍 Dirección                   │
+│  🏢 Sucursales                  │
+│  📧 Emails Departamentos        │
+│  🕐 Horarios Atención           │
+│  🌐 Sitio Web                   │
+└─────────────────────────────────┘
+```
+
+### Datos de Contacto
+
+```
+📞 CONTACTO SSAB CHILE
+
+Casa Matriz:
+📍 Av. Apoquindo 4800, Piso 11
+   Las Condes, Santiago
+
+📞 Teléfono: +56 2 2950 3000
+📠 Fax: +56 2 2950 3099
+
+📧 Emails:
+   • Ventas: ventas@ssab.cl
+   • Soporte: soporte@ssab.cl
+   • Facturación: facturacion@ssab.cl
+
+🕐 Horario:
+   Lunes a Viernes: 08:30 - 18:00
+   Sábado: Cerrado
+   Domingo: Cerrado
+
+🌐 www.ssab.com/es-cl
+```
+
+---

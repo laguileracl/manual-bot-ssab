@@ -1,0 +1,116 @@
+# Bienvenido {.unnumbered}
+
+<div class="text-center">
+
+![Bot de Gestión Comercial SSAB Chile](assets/01-buscar-bot.png){width=60% fig-align="center"}
+
+</div>
+
+## 📱 Acerca de este manual
+
+Bienvenido al **Manual de Usuario del Bot de Gestión Comercial SSAB Chile** 🤖
+
+Este manual ha sido diseñado para ayudarte a aprovechar al máximo las capacidades del bot de Telegram **@oxcl_bot**, una herramienta integral para:
+
+::: {.grid}
+
+::: {.g-col-6}
+### 📊 Gestión Inteligente
+- Búsqueda avanzada de clientes
+- Filtros personalizables
+- Acceso instantáneo a información
+:::
+
+::: {.g-col-6}
+### 📋 Fichas Técnicas
+- Catálogo completo de productos SSAB
+- Especificaciones detalladas
+- Imágenes y diagramas
+:::
+
+::: {.g-col-6}
+### 💰 Cuentas por Cobrar
+- Estado de cuenta en tiempo real
+- Análisis de cartera
+- Reportes en Excel
+:::
+
+::: {.g-col-6}
+### ℹ️ Información Corporativa
+- Datos de contacto SSAB
+- Información de productos
+- Recursos adicionales
+:::
+
+:::
+
+## 👥 ¿Para quién es este manual?
+
+::: {.callout-tip}
+## Audiencia Objetivo
+
+Este manual está dirigido a:
+
+- ✅ **Equipo comercial** de SSAB Chile
+- ✅ **Representantes de ventas** en terreno
+- ✅ **Personal de atención** al cliente
+- ✅ **Usuarios autorizados** con acceso al bot
+:::
+
+## 🗺️ Navegación
+
+Utiliza el **menú lateral** para navegar entre los diferentes capítulos. Cada sección incluye:
+
+- 📸 **Instrucciones paso a paso** con capturas de pantalla reales
+- 💡 **Ejemplos de uso práctico** para casos comunes
+- ⚡ **Consejos y mejores prácticas** del equipo
+- 📊 **Casos de uso reales** documentados
+
+## 📦 Formatos Disponibles
+
+Puedes acceder a este manual en diferentes formatos:
+
+<div class="text-center mt-4">
+
+[📄 Descargar PDF Completo](downloads/Manual_Completo_Bot_SSAB.pdf){.btn .btn-primary .download}
+[📱 Versión Web Interactiva](index.html){.btn .btn-secondary}
+[📖 Descargar EPUB](downloads/Manual_Bot_SSAB.epub){.btn .btn-secondary}
+
+</div>
+
+## 📋 Versión y Actualizaciones
+
+::: {.callout-note}
+## Información de Versión
+
+- **Versión:** 2.0  
+- **Fecha de publicación:** Noviembre 2025  
+- **Bot:** @oxcl_bot  
+- **Última actualización:** 6 de Noviembre de 2025
+- **Autor:** Luis Aguilera A.
+:::
+
+## 📞 Soporte
+
+Si necesitas ayuda adicional, contacta a:
+
+::: {.callout-important}
+## 👤 Contacto de Soporte
+
+**Luis Aguilera A.**  
+_Administrador del Sistema_
+
+- 📧 Email: [luis.aguilera@ssab.com](mailto:luis.aguilera@ssab.com)  
+- 📱 WhatsApp: [+56 9 7388 1390](https://wa.me/56973881390)  
+- 🏢 Empresa: SSAB Chile
+:::
+
+---
+
+::: {.callout-tip}
+## 💡 Consejo Rápido para Empezar
+
+Usa la **barra de búsqueda** (🔍) en la parte superior para encontrar rápidamente cualquier tema en este manual. También puedes navegar por capítulos usando el menú lateral o las flechas de navegación en cada página.
+
+**¿Primera vez?** Te recomendamos empezar por el capítulo [Inicio y Acceso](inicio.qmd) para configurar tu acceso al bot.
+:::

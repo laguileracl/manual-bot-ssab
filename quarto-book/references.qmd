@@ -1,0 +1,42 @@
+# Referencias {.unnumbered}
+
+## Soporte y Contacto
+
+Si necesitas ayuda adicional o tienes preguntas sobre el uso del bot:
+
+**Luis Aguilera**  
+Administrador del Sistema
+
+- 📧 Email: [luis.aguilera@ssab.com](mailto:luis.aguilera@ssab.com)
+- 📱 WhatsApp: [+56 9 7388 1390](https://wa.me/56973881390)
+- 🏢 Empresa: SSAB Chile
+
+## Enlaces Útiles
+
+- [SSAB Global](https://www.ssab.com)
+- [SSAB América Latina](https://www.ssab.com/es-cl)
+- [Productos SSAB](https://www.ssab.com/es-cl/productos)
+
+## Sobre SSAB
+
+SSAB es un fabricante global líder de acero de alta resistencia, especializado en:
+
+- Acero ultra-alta resistencia (UHSS)
+- Acero resistente al desgaste (Hardox)
+- Acero estructural (Strenx)
+- Soluciones sostenibles de acero
+
+## Historial de Versiones
+
+| Versión | Fecha | Cambios |
+|---------|-------|---------|
+| 2.0 | Nov 2025 | Manual completo en formato Quarto |
+| 1.0 | Nov 2025 | Primera versión del manual |
+
+## Agradecimientos
+
+Este manual fue desarrollado para facilitar el uso del Bot de Gestión Comercial SSAB Chile y mejorar la eficiencia del equipo comercial.
+
+---
+
+*Documento generado con [Quarto](https://quarto.org)*

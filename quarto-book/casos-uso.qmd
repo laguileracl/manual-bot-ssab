@@ -1,0 +1,103 @@
+# 💼 Casos de Uso Prácticos
+
+### Caso 1: Consulta Rápida de Cliente en Terreno
+
+**Situación:** Estás visitando un cliente y necesitas verificar su línea de crédito disponible.
+
+**Pasos:**
+
+1. Abrir Telegram → @oxcl_bot
+2. Menú Principal → 👥 Clientes
+3. 🔍 Buscar por Nombre → Ingresar nombre
+4. Ver **Línea Crédito** y **Disponible**
+
+**Tiempo:** 15 segundos
+
+<!-- ![Caso Uso 1](../assets/caso-uso-1.png) -->
+
+> 📸 *Imagen disponible próximamente*
+
+---
+
+### Caso 2: Generar Reporte de Morosidad para Reunión
+
+**Situación:** Necesitas un reporte actualizado de clientes morosos para reunión gerencial.
+
+**Pasos:**
+
+1. Menú Principal → 💰 Cuentas x Cobrar
+2. 1️⃣ Facturas Vencidas
+3. 👥 Ver por RSM
+4. Seleccionar tu nombre
+5. 📥 Descargar Excel
+
+**Tiempo:** 30 segundos
+**Resultado:** Excel con 5 hojas detalladas
+
+<!-- ![Caso Uso 2](../assets/caso-uso-2.png) -->
+
+> 📸 *Imagen disponible próximamente*
+
+---
+
+### Caso 3: Enviar Ficha Técnica a Cliente
+
+**Situación:** Cliente solicita información técnica de un producto.
+
+**Pasos:**
+
+1. Menú Principal → 📋 Fichas Técnicas
+2. 🔍 Buscar Producto → Ingresar código
+3. Ver Ficha Completa
+4. 📄 Descargar PDF
+5. Compartir PDF con cliente vía WhatsApp/Email
+
+**Tiempo:** 20 segundos
+
+<!-- ![Caso Uso 3](../assets/caso-uso-3.png) -->
+
+> 📸 *Imagen disponible próximamente*
+
+---
+
+### Caso 4: Verificar Estado de Cuenta Específico
+
+**Situación:** Cliente consulta sus facturas pendientes.
+
+**Pasos:**
+
+1. Menú Principal → 💰 Cuentas x Cobrar
+2. 4️⃣ Facturas por Cliente
+3. Buscar cliente
+4. Ver estado completo
+5. 📥 Descargar Excel si necesita
+6. 📧 Enviar al cliente
+
+**Tiempo:** 25 segundos
+
+<!-- ![Caso Uso 4](../assets/caso-uso-4.png) -->
+
+> 📸 *Imagen disponible próximamente*
+
+---
+
+### Caso 5: Análisis Panorámico de Cartera
+
+**Situación:** Necesitas visión general del estado de toda la cartera.
+
+**Pasos:**
+
+1. Menú Principal → 💰 Cuentas x Cobrar
+2. 6️⃣ Estado General Cartera
+3. Revisar distribución por rangos
+4. 👥 Ver por RSM para análisis por vendedor
+5. 📥 Descargar Excel consolidado
+
+**Tiempo:** 20 segundos
+**Resultado:** Vista completa de $461M+ en cartera
+
+<!-- ![Caso Uso 5](../assets/caso-uso-5.png) -->
+
+> 📸 *Imagen disponible próximamente*
+
+---

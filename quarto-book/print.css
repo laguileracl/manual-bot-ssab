@@ -1,0 +1,158 @@
+/* Estilos específicos para impresión y PDF */
+
+@media print {
+  /* Configuración de página */
+  @page {
+    margin: 2cm 1.5cm;
+    size: letter;
+  }
+  
+  /* Ocultar elementos de navegación */
+  .navbar,
+  .sidebar,
+  .page-footer,
+  .btn,
+  .download,
+  #quarto-header,
+  .quarto-title-banner {
+    display: none !important;
+  }
+  
+  /* Ajustar contenido principal */
+  .page-columns {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+  
+  /* Tipografía para impresión */
+  body {
+    font-size: 11pt;
+    line-height: 1.4;
+    color: #000;
+    background: #fff;
+  }
+  
+  h1 {
+    font-size: 20pt;
+    page-break-before: always;
+    color: #002F6C;
+    border-bottom: 2pt solid #E2001A;
+    padding-bottom: 8pt;
+  }
+  
+  h1:first-of-type {
+    page-break-before: avoid;
+  }
+  
+  h2 {
+    font-size: 16pt;
+    page-break-after: avoid;
+    color: #002F6C;
+    margin-top: 16pt;
+  }
+  
+  h3 {
+    font-size: 13pt;
+    page-break-after: avoid;
+    color: #0A4B9A;
+  }
+  
+  /* Evitar rupturas */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+  
+  p, li {
+    orphans: 3;
+    widows: 3;
+  }
+  
+  /* Imágenes */
+  img {
+    max-width: 85% !important;
+    height: auto;
+    display: block;
+    margin: 12pt auto;
+    page-break-inside: avoid;
+    box-shadow: none;
+    border: 1pt solid #dee2e6;
+  }
+  
+  /* Tablas */
+  table {
+    page-break-inside: avoid;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 12pt 0;
+  }
+  
+  thead {
+    display: table-header-group;
+  }
+  
+  tr {
+    page-break-inside: avoid;
+  }
+  
+  /* Código */
+  pre {
+    page-break-inside: avoid;
+    border: 1pt solid #dee2e6;
+    padding: 8pt;
+    background: #f8f9fa;
+    font-size: 9pt;
+  }
+  
+  code {
+    background: #f1f3f5;
+    padding: 2pt 4pt;
+    font-size: 9pt;
+  }
+  
+  /* Callouts */
+  .callout {
+    page-break-inside: avoid;
+    border: 1pt solid #dee2e6;
+    border-left: 3pt solid;
+    padding: 8pt;
+    margin: 8pt 0;
+    background: #f8f9fa;
+  }
+  
+  /* Enlaces - mostrar URL */
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #6c757d;
+  }
+  
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  
+  /* Listas */
+  ul, ol {
+    margin: 8pt 0;
+    padding-left: 20pt;
+  }
+  
+  li {
+    margin-bottom: 4pt;
+  }
+}
+
+/* Estilos para generación de PDF con Quarto */
+.pdf-only {
+  display: none;
+}
+
+@media print {
+  .pdf-only {
+    display: block;
+  }
+  
+  .web-only {
+    display: none;
+  }
+}

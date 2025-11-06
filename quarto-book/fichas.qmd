@@ -1,0 +1,81 @@
+# 📋 Fichas Técnicas
+
+### Catálogo de Productos
+
+**Acceso:** Menú Principal → 📋 Fichas Técnicas
+
+#### Navegación por Categorías
+
+El catálogo está organizado en 3 familias principales:
+
+1. **💄 Labios** (Perfiles Labios)
+
+   - Espesores disponibles
+   - Dimensiones estándar
+   - Aplicaciones
+2. **🔲 Mainframe Liner**
+
+   - Perfiles estructurales
+   - Especificaciones técnicas
+   - Cargas admisibles
+3. **⚡ Ripper**
+
+   - Aceros especiales
+   - Grados y resistencias
+   - Aplicaciones industriales
+
+![Catálogo Productos](../assets/06-catalogo.png)
+
+### Búsqueda de Productos
+
+#### Por Código/Nombre
+
+1. Presionar **"🔍 Buscar Producto"**
+2. Ingresar código o palabra clave
+3. Ver resultados filtrados
+
+**Ejemplo:**
+
+```
+Usuario: "LP200"
+Bot: 📋 Labios LP200x4.5
+     Espesor: 4.5mm
+     Largo: 200mm
+     [Ver Ficha Completa]
+```
+
+### Ficha Técnica Completa
+
+Al seleccionar un producto:
+
+```
+╔════════════════════════════════════╗
+║  FICHA TÉCNICA                     ║
+╠════════════════════════════════════╣
+║  📦 Producto: Labios LP200x4.5     ║
+║  🔢 Código: LP200-45               ║
+║  📏 Dimensiones:                   ║
+║     • Largo: 200 mm                ║
+║     • Espesor: 4.5 mm              ║
+║     • Ancho: 150 mm                ║
+║  ⚙️  Material: HARDOX 500          ║
+║  💪 Dureza: 500 HBW                ║
+║  📊 Peso: 12.5 kg/unidad           ║
+║  💵 Precio: $145.000 + IVA         ║
+║  📦 Stock: Disponible              ║
+║  🚚 Entrega: 3-5 días hábiles      ║
+╚════════════════════════════════════╝
+```
+
+![Ficha Técnica Parte 1](../assets/07-ficha-tecnica-01.png)
+
+![Ficha Técnica Parte 2](../assets/07-ficha-tecnica-02.png)
+
+### Acciones Disponibles
+
+- 📄 **Descargar PDF**: Ficha técnica completa en PDF
+- 🖼️ **Ver Planos**: Dibujos técnicos y dimensiones
+- 💰 **Cotizar**: Generar cotización para cliente
+- 📧 **Compartir**: Enviar ficha por email
+
+---

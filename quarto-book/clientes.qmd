@@ -1,0 +1,69 @@
+# 👥 Gestión de Clientes
+
+### Búsqueda de Clientes
+
+**Acceso:** Menú Principal → 👥 Clientes
+
+#### Opción 1: Búsqueda por Nombre
+
+1. Presionar **"🔍 Buscar por Nombre"**
+2. Escribir el nombre del cliente (mínimo 3 letras)
+3. Seleccionar de la lista de resultados
+
+**Ejemplo:**
+
+```
+Usuario: "Tecno"
+Bot: Encontrados 3 clientes:
+     • Tecno Industrial S.A.
+     • Tecnomaq Ltda.
+     • Tecno Metales Chile
+```
+
+![Búsqueda por Nombre](../assets/04-busqueda-nombre.png)
+
+#### Opción 2: Búsqueda por Código
+
+1. Presionar **"🔢 Buscar por Código"**
+2. Ingresar el código SAP del cliente
+3. Ver información detallada
+
+**Ejemplo:**
+
+```
+Usuario: "C123456"
+Bot: [Muestra ficha completa del cliente]
+```
+
+### Información del Cliente
+
+Al seleccionar un cliente, obtienes:
+
+```
+╔══════════════════════════════════╗
+║  INFORMACIÓN DEL CLIENTE         ║
+╠══════════════════════════════════╣
+║  📌 Nombre: Tecno Industrial S.A.║
+║  🔢 Código: C123456              ║
+║  👤 Ejecutivo: Juan Pérez        ║
+║  📞 Teléfono: +56 9 8765 4321    ║
+║  📧 Email: ventas@tecno.cl       ║
+║  💳 Línea Crédito: $50.000.000   ║
+║  📊 Usado: $32.500.000 (65%)     ║
+║  🎯 Disponible: $17.500.000      ║
+║  📅 Plazo Pago: 30 días          ║
+╚══════════════════════════════════╝
+```
+
+![Ficha Cliente](../assets/05-ficha-cliente.png)
+
+### Acciones Disponibles
+
+Desde la ficha del cliente puedes:
+
+- 📊 **Ver Estado de Cuenta**: Facturas pendientes y saldos
+- 📥 **Descargar Excel**: Reporte detallado en Excel
+- 📇 **Exportar Contacto**: Archivo vCard para tu agenda
+- 🔙 **Volver**: Regresar al menú anterior
+
+---
