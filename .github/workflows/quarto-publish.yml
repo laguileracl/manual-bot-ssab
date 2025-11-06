@@ -32,7 +32,7 @@ jobs:
       - name: Render Quarto Book
         run: |
           cd quarto-book
-          quarto render
+          quarto render --to html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
