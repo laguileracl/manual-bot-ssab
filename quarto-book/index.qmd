@@ -2,7 +2,7 @@
 
 <div class="text-center">
 
-![Bot de Gestión Comercial SSAB Chile](assets/01-buscar-bot.png){width=60% fig-align="center"}
+![Bot de Gestión Comercial SSAB Chile](01-buscar-bot.png){width=60% fig-align="center"}
 
 </div>
 

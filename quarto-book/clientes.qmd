@@ -1,4 +1,4 @@
-# 👥 Gestión de Clientes
+# Gestión de Clientes
 
 ### Búsqueda de Clientes
 

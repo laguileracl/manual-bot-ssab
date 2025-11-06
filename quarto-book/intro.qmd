@@ -1,4 +1,4 @@
-# 🎯 Introducción
+# Introducción
 
 El **Bot de Gestión Comercial SSAB Chile** es una herramienta desarrollada para facilitar el acceso instantáneo a información crítica del negocio directamente desde Telegram. Diseñado específicamente para el equipo comercial, permite consultar datos de clientes, fichas técnicas de productos, estados de cuenta y análisis de cartera en tiempo real.
 
